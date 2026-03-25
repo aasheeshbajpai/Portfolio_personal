@@ -1,0 +1,1516 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+<link href="style.css" rel="stylesheet" type="text/css">
+  <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <script type="text/javascript" 
+     src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+	  //Default Action
+	  $(".tab_content").hide(); //Hide all content
+	  $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	  $(".tab_content:first").show(); //Show first tab content
+	  
+	  //On Click Event
+	  $("ul.tabs li").click(function() {
+		  $("ul.tabs li").removeClass("active"); //Remove any "active" class
+		  $(this).addClass("active"); //Add "active" class to selected tab
+		  $(".tab_content").hide(); //Hide all tab content
+		  var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		  $(activeTab).fadeIn(); //Fade in the active content
+		  return false;
+	  });
+
+  });
+  </script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28132913-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <title>Aasheesh Bajpai -Webpage </title>
+</head>
+
+<body>
+<head>
+  <title>Aasheesh Bajpai - Resume</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Aasheesh<span class="logo_colour">Bajpai</span></a></h1>
+          <h2>Prime Minister Research Fellow, Dept. of Aerospace Engineering, IIT Kanpur</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li ><a href="index.html">Home</a></li>
+          <!--  <li><a href="examples.html">Examples</a></li>  -->
+          <li class="selected"><a href="resume.html">Resume</a></li>
+          <li><a href="publications.html">Publications</a></li>
+	  <li><a href="MD-Notes.html">Molecular Dynamics</a></li>
+	   <li><a href="TD-PMRF.html">Teaching Duty for PMRF</a></li>
+	   <li><a href="K.html">NEW</a></li>
+
+          <!-- <li><a href="contact.html">Contact Me</a></li>   --> 
+        </ul>
+      </div>
+    </div>
+<div class="container">
+	
+    <ul class="tabs">
+        <li><a href="#tab1">Home</a></li>
+        <li><a href="#tab2">Academic Profile</a></li>
+        <li><a href="#tab3">Publications</a></li>
+	<li><a href="#tab4">Teaching</a></li>
+	<li><a href="#tab5">Research Group</a></li>
+	<li><a href="#tab6">Useful Material</a></li>
+	<li><a href="#tab7">Contact</a></li>
+	
+    </ul>
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+<!--             	background="greybg.jpg" -->
+            <!-- <TABLE  background="greybg.jpg" width ="980"> -->
+            <TABLE  width ="980">
+		<tr>
+		<td>
+		    <img src="personal_photo1.jpg" width="220" /> </p>
+		    <p><font size="4">Aasheesh Bajpai</font></p>
+		    <p>Assistant Professor</p>
+		    <p><a href="https://mech.iitm.ac.in/meiitm/" target ="_blank">
+		       Department of Mechanical Engineering</a></p>
+		    <p><a href="https://www.iitm.ac.in/" target="_blank">
+			Indian Institute of Technology Madras</font></a></p>
+		    <!-- <a href = "Anupindi_CV.pdf" target="_blank">Curriculum Vitae</font></a> -->
+		</td>
+		</tr>
+	   </TABLE>
+    	    <hr>
+            <p align="justify">
+	      Hello, welcome to my webpage.
+	      I am currently working as an research Scholar in the
+	      <a href="https://mech.iitm.ac.in/meiitm/" target="_blank">Department of Mechanical Engineering</a> 
+	      at <a href="https://www.iitm.ac.in/" target="_blank"> Indian Institute of Technology Madras</a>, Chennai, Tamil Nadu.
+	      
+	      Previously, I was a Research Fellow in the
+	      <a href="http://www.southampton.ac.uk/engineering/research/groups/afm.page#overview" target="_blank">
+		Aerodynamics and Flight Mechanics</a>
+	   research group at the
+	   <a href="http://www.southampton.ac.uk/" target="_blank">University of Southampton</a>.
+	   My research focus was on developing 
+	   embedded LES-RANS methodologies in compressible flows with applications to predicting
+	   flow around aircraft spoilers accurately and efficiently. At the University, 
+	   I worked with 
+	   <a href ="http://www.southampton.ac.uk/engineering/about/staff/sandberg.page?" target ="_blank">
+	   Professor Richard Sandberg</a> to develop these methods.  
+
+	   <p align="justify">
+	   Before moving to England, I worked as a post doctoral researcher at
+	   <a href="http://www.ornl.gov/" target="_blank"> Oak Ridge National Lab (ORNL)</a>,
+	   Tennessee, USA. My appointment at ORNL was possible through 
+	   <a href="http://www.orau.org/ornl/astro/" target="_blank">
+	   Advanced Short Term Research Opportunity (ASTRO)</a>
+	   program. During my time at the lab, I worked on enhancing an in-house lattice Boltzmann solver
+	   and its pre-processor. 
+
+	   <p align="justify">
+	   I pursued my doctoral studies under the guidance of
+	   <a href="https://engineering.purdue.edu/CFDLAB/" target="_blank">Professor Steven Frankel</a>, 
+	   in the 
+	   <a href="https://engineering.purdue.edu/ME" target="_blank">School of Mechanical Engineering</a>, 
+	   <a href="http://www.purdue.edu" target="_blank"> Purdue University</a>. 
+	   My research was on developing a high order numerical frame work for simulating and understanding the
+	   blood flow in human arteries in healthy and pathological conditions. The main goal of the research is to 
+	   accurately predict/simulate the working conditions of medical devices used in pathological arterial repair. 
+	   The incompressible flow solver that I am working with specifically has large eddy simulation (LES) as the 
+	   turbulence model, and enhancements such as implementation of immersed boundary method (IBM) and a parallel 
+	   multi-block frame were contributed by me in order to handle complex geometries that commonly arise in arterial flow domains. 
+
+           </p>
+
+           <p align="justify">
+		Prior to enrolling for my doctoral studies, I worked at
+                <a href="http://www.ansys.com/en_in" target="_blank">ANSYS FLUENT India Pvt. Ltd.</a>, Pune, Maharashtra, 
+		as a software development engineer on the FLUENT project. During this time, I have had an opportunity to work with a dynamic and
+		smart solver meshing team. I worked on new enhancements and issues related to solver meshing such as non-conformal 
+		interfaces and moving meshes during my tenure. 
+	    </p>
+
+
+	   <p align="justify">
+		I pursued my masters studies in the <a href="http://www.iitk.ac.in/aero/home/" target="_blank">Department of Aerospace Engineering</a>, 
+		<a href="http://iitk.ac.in/" target=_blank">Indian Institute of Technology Kanpur</a>, Uttar Pradhesh.
+                I worked under the guidance of 
+		<a href="http://home.iitk.ac.in/~tksen/" target="_blank">Professor Tapan K. Sengupta</a> towards my thesis on direct numerical simulation of 
+		free shear layers. During this time I worked on spatio-temporal instability of zero pressure gradient boundary
+		layers and numerically solving compressible Navier-Stokes equations using compact schemes to simulate flow 
+		field developed by a round jet issuing into a quiescent atmosphere. Prior to joining post graduate studies 
+		I finished my bachelors studies from <a href="http://www.jntuk.edu.in/" target="_blank">Jawaharlal Nehru Technological University College of Engineering</a>, 
+		Kakinada, Andhra Pradesh, in Mechanical Engineering.
+	   </p>
+         
+
+	   <p align="justify">
+	    <hr>
+	      <!-- Last updated: 13 November 2015 -->
+	   </p>
+
+        </div>
+
+        <div id="tab2" class="tab_content">
+	    <h2>Research Interests</h2>
+		<ul>
+		<li>Computational Fluid Dynamics</li>
+		<li>Biomedical fluid flows</li>
+		<li>Lattice Boltzmann method</li>
+		<li>Transition & Turbulence</li>
+		<li>Aeroacoustics</li>
+		</ul>
+
+            <h2>Education</h2>
+            <table cols="2" width="750">
+    		<colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+ 
+   		<tr valign="top"><td><b>Jan 2010 - Dec 2013</b></td> <td><b>Ph.D. in Mechanical Engineering.</b> <br> Purdue University, West Lafayette, IN, USA.</td></tr>
+
+		<tr valign="top"><td><b>Jun 2004 - May 2006</b></td> <td><b>M.Tech. in Aerospace Engineering.</b> <br> Indian Institute of Technolgoy Kanpur, UP, India.</td></tr> 
+
+		<tr valign="top"><td><b>Jun 2000 - May 2004</b></td> <td><b>B.Tech. in Mechanical Engineering.</b> <br> JNTU College of Engineering, Kakinada, AP, India.</td></tr>	
+    	   </table>
+
+	  <h2>Experience</h2>
+	  <table cols="2" width="750" border-spacing: 15px;>
+     	     <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+
+	    <tr valign="top"><td><b>Nov 2015 - Present</b></td> <td><b>Assistant Professor</b> <br>Department of Mechanical Engineering<br>IIT Madras, Chennai, India.</td></tr> 
+
+     	     <tr valign="top"><td><b>Mar 2014 - Oct 2015 </b></td> <td><b>Research Fellow</b> <br>Aerodyanmics and Flight Mechanics Research Group<br>University of Southampton, England, UK.</td></tr> 
+	    	    
+	    <tr valign="top"><td><b>Oct 2013 - Feb 2014 </b></td> <td><b>Post Doctoral Researcher</b> <br>Oak Ridge National Laboratory<br> Oak Ridge, TN, USA.</td></tr> 
+	    
+	    <tr valign="top"><td><b>Jan 2010 - July 2013 </b></td> <td><b>Graduate Research Assistant </b> <br>School of Mechanical Engineering<br> Purdue University, West Lafayette, IN, USA.</td></tr> 
+	    
+	    <tr valign="top"><td><b>Aug 2006 - Dec 2009 </b></td> <td><b>Software Developement Engineer</b><br>Solver Meshing Group, FLUENT Project <br>ANSYS FLUENT India Pvt. Ltd., Pune, MH, India.</td></tr>    
+	    
+	    <tr valign="top"><td><b>Jul 2004 - Jun 2006 </b></td> <td><b>Graduate Research Assistant</b> <br>Department of Aerospace Engineering<br>Indian Institute of Technolgoy Kanpur, India.</td></tr>
+
+	  </table>
+
+	  <h2>Teaching Experience (as a student)</h2>
+	  <table cols="2" width="750">
+	  <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+
+	  <tr valign="top"><td><b>Fall   2010 </b></td> <td><b>Teaching Assistant </b> ME323: Mechanics of Solids </td></tr> 
+
+	  <tr valign="top"><td><b>Spring 2011 </b></td> <td><b>Teaching Assistant</b> ME614: Computational Fluid Dynamics</td></tr> 	
+
+	  </table>	
+
+
+	  <h2>Course Projects (as a student at Purdue) </h2>
+	  <table cols="2" width="750">
+	  <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+
+	  <tr valign="top"><td><b>ME608 (Spring 2010) </b></td><td>      <b>Numerical Methods in Heat, Mass, and Momentum Transfer</b>
+								    <br> <em>2D SIMPLE Solver for Laminar Flow Over a Square Cylinder</em> 
+								    <br> <a href="./course_projects/me608_report.pdf" target="blank">Report [431 KB]</a>, 
+									 <a href="./course_projects/me608_presentation.pdf" target="blank">Presentation [456 KB]</a></td></tr>
+
+	  <tr valign="top"><td><b>ME697F (Spring 2010) </b></td><td>     <b> Galerkin Methods for Fluid Dynamics</b>
+								    <br> <em>Galerkin/Least Squares Finite Element Method for Fluid Flow Problems</em> 
+								    <br> <a href="./course_projects/me697f_report.pdf" target="blank">Report [411 KB]</a>, Presentation</td></tr> 
+
+	  <tr valign="top"><td><b>ME611 (Fall 2010) </b></td><td>        <b> Principles of Turbulence</b>
+								    <br> <em>Project1: Proper Orthogonal Decomposition</em> 
+								    <br> <a href="./course_projects/me611_pod_presentation.pdf" target="blank"> Presentation [588 KB]<a>
+								    <br> <em>Project2: Dynamic Mode Decomposition (DMD) of Fluid Flow Data</em> 
+								    <br> <a href="./course_projects/me611_dmd_presentation.pdf" target="blank"> Presentation [28 MB]</a></td></tr> 
+
+	  <tr valign="top"><td><b>AAE626 (Spring 2011) </b></td><td>      <b>Turbulence and Turbulence Modeling</b>
+								    <br> <em>Large eddy simulation of turbulent flow between counter-</em>
+								    <br> <em>rotating concentric cylinders</em> 
+								    <br> <a href="./course_projects/aae626_report.pdf" target="blank">Report [4.5 MB]</a>, 
+									 Presentation</td></tr> 
+
+	  <tr valign="top"><td><b>ME615 (Fall 2011) </b></td><td>      <b>Aeroacoustics</b>
+								    <br> <em>Aeroacoustic simulations using Lattice Boltzmann Method (LBM)</em>
+								    <br> <a href="./course_projects/me615_report.pdf" target="blank">Report [3.3 MB]</a>, 
+									 <a href="./course_projects/me615_presentation.pdf" target="blank">Presentation [3.1 MB]</a></td></tr>
+
+
+	  <tr valign="top"><td><b>ECE563 (Spring 2012) </b></td><td>      <b>Programming Parallel Machines</b>
+								    <br> <em>MPI Parallelization of WenoHydro and FlowLBM solvers</em>
+								    <br> <a href="./course_projects/ece563_report.pdf" target="blank">Report [1.2 MB]</a></td></tr> 
+
+	  <tr valign="top"><td><b>MA692 (Fall 2012) </b></td><td> <b>Introduction to Spectral Methods for Scientific Computing</b>
+								    <br> <em>Final Project </em>
+								    <br> <a href="./course_projects/ma692_final_project.pdf" target="blank"> Report [221 KB] </a> </td></tr> 
+
+	  </table>	
+
+
+	</div>
+
+        <div id="tab3" class="tab_content">
+          <h2>Refereed Journal Publications</h2>
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="JOGEE2022122324">1</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Jogee and K.&nbsp;Anupindi.
+ Near-wake flow and thermal characteristics of three side-by-side
+  circular cylinders for large temperature differences using large-eddy
+  simulation.
+ <em>International Journal of Heat and Mass Transfer</em>, 184:122324,
+  2022.
+ https://doi.org/10.1016/j.ijheatmasstransfer.2021.122324.
+[&nbsp;<a href="https://doi.org/10.1016/j.ijheatmasstransfer.2021.122324">DOI</a>&nbsp;| 
+<a href="https://www.sciencedirect.com/science/article/pii/S001793102101423X">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Choudhury2021">2</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Choudhury, K.&nbsp;Anupindi, and B.&nbsp;S.&nbsp;V. Patnaik.
+ A study on the transport and interaction between blood flow and
+  low-density-lipoprotein in near-wall regions of blood vessels.
+ <em>Computer Methods in Biomechanics and Biomedical Engineering</em>,
+  2021.
+ 10.1080/10255842.2021.1893311.
+[&nbsp;<a href="http://dx.doi.org/10.1080/10255842.2021.1893311">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85105974060&amp;doi=10.1080%2F10255842.2021.1893311&amp;partnerID=40&amp;md5=d016acf82354627be26a6b9329ef1c48">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sakthivel2021">3</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ An off-lattice Boltzmann method for blood flow simulation through a
+  model irregular arterial stenosis: The effects of amplitude and frequency of
+  the irregularity.
+ <em>Physics of Fluids</em>, 33(3), 2021.
+ 10.1063/5.0044948.
+[&nbsp;<a href="http://dx.doi.org/10.1063/5.0044948">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85103346551&amp;doi=10.1063%2F5.0044948&amp;partnerID=40&amp;md5=ba4f6c6e0ccd17e38b15634980864868">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Kakka2021">4</a>]
+</td>
+<td class="bibtexitem">
+P.&nbsp;Kakka and K.&nbsp;Anupindi.
+ Flow and thermal characteristics of three-dimensional turbulent wall
+  jet.
+ <em>Physics of Fluids</em>, 33(2), 2021.
+ 10.1063/5.0031138.
+[&nbsp;<a href="http://dx.doi.org/10.1063/5.0031138">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85100892555&amp;doi=10.1063%2F5.0031138&amp;partnerID=40&amp;md5=3c242feec41eb67070227afd867e1650">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Barve2020">5</a>]
+</td>
+<td class="bibtexitem">
+A.&nbsp;V. Barve, S.&nbsp;Sahu, and K.&nbsp;Anupindi.
+ Effect of co-flow velocity ratio on evolution of poly-disperse
+  particles in coaxial turbulent jets: A large-eddy simulation study.
+ <em>Physics of Fluids</em>, 32(9), 2020.
+ 10.1063/5.0017663.
+[&nbsp;<a href="http://dx.doi.org/10.1063/5.0017663">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85091815475&amp;doi=10.1063%2F5.0017663&amp;partnerID=40&amp;md5=d1182c9abbf49247e2ff545d59cdf639">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Paghdar2020">6</a>]
+</td>
+<td class="bibtexitem">
+D.&nbsp;Paghdar, S.&nbsp;Jogee, and K.&nbsp;Anupindi.
+ Large-eddy simulation of counter-rotating Taylor&#x2013;Couette flow: The
+  effects of angular velocity and eccentricity.
+ <em>International Journal of Heat and Fluid Flow</em>, 81, 2020.
+ 10.1016/j.ijheatfluidflow.2019.108514.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.ijheatfluidflow.2019.108514">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074973295&amp;doi=10.1016%2Fj.ijheatfluidflow.2019.108514&amp;partnerID=40&amp;md5=a3ac3a2a8560d71a7453b37a43a37e3b">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Kakka2020">7</a>]
+</td>
+<td class="bibtexitem">
+P.&nbsp;Kakka and K.&nbsp;Anupindi.
+ Assessment of subgrid-scale models for large-eddy simulation of a
+  planar turbulent wall-jet with heat transfer.
+ <em>International Journal of Heat and Mass Transfer</em>, 153, 2020.
+ 10.1016/j.ijheatmasstransfer.2020.119593.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2020.119593">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85081217271&amp;doi=10.1016%2Fj.ijheatmasstransfer.2020.119593&amp;partnerID=40&amp;md5=797ed1d5acf06279c27c3c6d69e2d9f0">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Jogee2020">8</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Jogee, B.&nbsp;Prasad, and K.&nbsp;Anupindi.
+ Large-eddy simulation of non-isothermal flow over a circular
+  cylinder.
+ <em>International Journal of Heat and Mass Transfer</em>, 151, 2020.
+ 10.1016/j.ijheatmasstransfer.2020.119426.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.ijheatmasstransfer.2020.119426">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85079009832&amp;doi=10.1016%2Fj.ijheatmasstransfer.2020.119426&amp;partnerID=40&amp;md5=907905ee44ed393feaab3d5187d51e85">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Choudhury2019">9</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Choudhury, K.&nbsp;Anupindi, and B.&nbsp;S.&nbsp;V. Patnaik.
+ Influence of wall shear stress and geometry on the lumen surface
+  concentration of low density lipoprotein in a model abdominal aortic
+  aneurysm.
+ <em>Physics of Fluids</em>, 31(1), 2019.
+ 10.1063/1.5074125.
+[&nbsp;<a href="http://dx.doi.org/10.1063/1.5074125">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85060647198&amp;doi=10.1063%2F1.5074125&amp;partnerID=40&amp;md5=84f8fbd242c4000855d4f11a780b167b">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sakthivel2019">10</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ Axisymmetric compact finite-difference lattice Boltzmann method for
+  blood flow simulations.
+ <em>Physical Review E</em>, 100(4), 2019.
+ 10.1103/PhysRevE.100.043307.
+[&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevE.100.043307">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85074927187&amp;doi=10.1103%2FPhysRevE.100.043307&amp;partnerID=40&amp;md5=dd6a23da5e61e1ce30b4082824c549d0">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Polasanapalli2019259">11</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;R.&nbsp;G. Polasanapalli and K.&nbsp;Anupindi.
+ A high-order compact finite-difference lattice Boltzmann method for
+  simulation of natural convection.
+ <em>Computers and Fluids</em>, 181:259&#x2013;282, 2019.
+ 10.1016/j.compfluid.2019.02.007.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.compfluid.2019.02.007">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85061541541&amp;doi=10.1016%2Fj.compfluid.2019.02.007&amp;partnerID=40&amp;md5=4eb00290870948fb3ceffcf775ee8646">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="ravindra2018unsteady">12</a>]
+</td>
+<td class="bibtexitem">
+V.&nbsp;Ravindra, S.&nbsp;K. Chinige, K.&nbsp;Anupindi, and A.&nbsp;Pattamatta.
+ Unsteady mixed convection past a circular cylinder using ghost fluid
+  cascaded lattice Boltzmann method (GF-CLBM).
+ <em>International Journal of Advances in Engineering Sciences and
+  Applied Mathematics</em>, 10(4):281&#x2013;290, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Anupindi2017697">13</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi and R.&nbsp;D. Sandberg.
+ Implementation and Evaluation of an Embedded LES-RANS Solver.
+ <em>Flow, Turbulence and Combustion</em>, 98(3):697&#x2013;724, 2017.
+ 10.1007/s10494-016-9787-5.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s10494-016-9787-5">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84992709469&amp;doi=10.1007%2Fs10494-016-9787-5&amp;partnerID=40&amp;md5=4e14e4849a8e8ca2351ef00e086701aa">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Anupindi20147">14</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi, W.&nbsp;Lai, and S.&nbsp;Frankel.
+ Characterization of oscillatory instability in lid driven cavity
+  flows using lattice Boltzmann method.
+ <em>Computers and Fluids</em>, 92:7&#x2013;21, 2014.
+ 10.1016/j.compfluid.2013.12.015.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.compfluid.2013.12.015">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84892141860&amp;doi=10.1016%2Fj.compfluid.2013.12.015&amp;partnerID=40&amp;md5=77de963bc76399bd6d2ad41330069f11">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Pal2014">15</a>]
+</td>
+<td class="bibtexitem">
+A.&nbsp;Pal, K.&nbsp;Anupindi, Y.&nbsp;Delorme, N.&nbsp;Ghaisas, D.&nbsp;A. Shetty, and S.&nbsp;H. Frankel.
+ Large eddy simulation of transitional flow in an idealized stenotic
+  blood vessel: Evaluation of subgrid scale models.
+ <em>Journal of Biomechanical Engineering</em>, 136(7), 2014.
+ 10.1115/1.4027610.
+[&nbsp;<a href="http://dx.doi.org/10.1115/1.4027610">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84901459260&amp;doi=10.1115%2F1.4027610&amp;partnerID=40&amp;md5=7299271a38a0ddfcd041ab6d17592caf">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Delorme2014">16</a>]
+</td>
+<td class="bibtexitem">
+Y.&nbsp;T. Delorme, A.-E. Kerlo, K.&nbsp;Anupindi, M.&nbsp;D. Rodefeld, and S.&nbsp;H. Frankel.
+ Dynamic mode decomposition of Fontan hemodynamics in an idealized
+  total cavopulmonary connection.
+ <em>Fluid Dynamics Research</em>, 46(4), 2014.
+ 10.1088/0169-5983/46/4/041425.
+[&nbsp;<a href="http://dx.doi.org/10.1088/0169-5983/46/4/041425">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84907697836&amp;doi=10.1088%2F0169-5983%2F46%2F4%2F041425&amp;partnerID=40&amp;md5=c4c5bb6cf6074b7edb4c586c5a51ae8f">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Anupindi2013200">17</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi, Y.&nbsp;Delorme, D.&nbsp;A. Shetty, and S.&nbsp;H. Frankel.
+ A novel multiblock immersed boundary method for large eddy
+  simulation of complex arterial hemodynamics.
+ <em>Journal of Computational Physics</em>, 254:200&#x2013;218, 2013.
+ 10.1016/j.jcp.2013.07.033.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.jcp.2013.07.033">DOI</a>&nbsp;| 
+<a href="https://10.1016%2Fj.jcp.2013.07.033">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Delorme2013392">18</a>]
+</td>
+<td class="bibtexitem">
+Y.&nbsp;T. Delorme, K.&nbsp;Anupindi, and S.&nbsp;H. Frankel.
+ Large Eddy Simulation of FDA's Idealized Medical Device.
+ <em>Cardiovascular Engineering and Technology</em>, 4(4):392&#x2013;407, 2013.
+ 10.1007/s13239-013-0161-7.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s13239-013-0161-7">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84886233906&amp;doi=10.1007%2Fs13239-013-0161-7&amp;partnerID=40&amp;md5=f239b89ff43b09be26faeb8f6d94a569">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Delorme2013408">19</a>]
+</td>
+<td class="bibtexitem">
+Y.&nbsp;Delorme, K.&nbsp;Anupindi, A.&nbsp;E. Kerlo, D.&nbsp;Shetty, M.&nbsp;Rodefeld, J.&nbsp;Chen, and
+  S.&nbsp;Frankel.
+ Large eddy simulation of powered Fontan hemodynamics.
+ <em>Journal of Biomechanics</em>, 46(2):408&#x2013;422, 2013.
+ 10.1016/j.jbiomech.2012.10.045.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.jbiomech.2012.10.045">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-84872609056&amp;doi=10.1016%2Fj.jbiomech.2012.10.045&amp;partnerID=40&amp;md5=7ea77125bfefae4c9e791e5c18a25d89">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sengupta2007654">20</a>]
+</td>
+<td class="bibtexitem">
+T.&nbsp;K. Sengupta, A.&nbsp;Dipankar, and A.&nbsp;K. Rao.
+ A new compact scheme for parallel computing using domain
+  decomposition.
+ <em>Journal of Computational Physics</em>, 220(2):654&#x2013;677, 2007.
+ 10.1016/j.jcp.2006.05.018.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.jcp.2006.05.018">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-33845618071&amp;doi=10.1016%2Fj.jcp.2006.05.018&amp;partnerID=40&amp;md5=3bc1edab564e334f5d6d56008ab88b3a">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sengupta2006a">21</a>]
+</td>
+<td class="bibtexitem">
+T.&nbsp;K. Sengupta, A.&nbsp;K. Rao, and K.&nbsp;Venkatasubbaiah.
+ Spatiotemporal growing wave fronts in spatially stable boundary
+  layers.
+ <em>Physical Review Letters</em>, 96(22), 2006.
+ 10.1103/PhysRevLett.96.224504.
+[&nbsp;<a href="http://dx.doi.org/10.1103/PhysRevLett.96.224504">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-33745041578&amp;doi=10.1103%2FPhysRevLett.96.224504&amp;partnerID=40&amp;md5=d5b6c73eef0b960be525c7fe313c2380">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sengupta2006b">22</a>]
+</td>
+<td class="bibtexitem">
+T.&nbsp;K. Sengupta, A.&nbsp;K. Rao, and K.&nbsp;Venkatasubbaiah.
+ Spatio-temporal growth of disturbances in a boundary layer and
+  energy based receptivity analysis.
+ <em>Physics of Fluids</em>, 18(9), 2006.
+ 10.1063/1.2348732.
+[&nbsp;<a href="http://dx.doi.org/10.1063/1.2348732">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-33749234172&amp;doi=10.1063%2F1.2348732&amp;partnerID=40&amp;md5=f74a05b7f6f24fe6dd55e0f55f72cf9c">http</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+
+ <h2>Refereed Conference Publications</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Kakkaishmt2019">1</a>]
+</td>
+<td class="bibtexitem">
+P.&nbsp;Kakka and K.&nbsp;Anupindi.
+ A comparison of RANS and LES models for the prediction of heat
+  transfer characteristics of wall-jets.
+ In <em>Proceedings of 25<sup>th</sup> National and 3<sup>rd</sup> International
+  ISHMT-ASTFE Heat and Mass Transfer Conference (IHMTC&#x2013;2019)</em>, pages 947&#x2013;951,
+  2019.
+ 10.1615/IHMTC&#x2013;2019.1590.
+[&nbsp;<a href="http://dx.doi.org/10.1615/IHMTC--2019.1590">DOI</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Jogeeishmt2019">2</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Jogee, K.&nbsp;Anupindi, and B.&nbsp;V. S. S.&nbsp;S. Prasad.
+ Evaluation of turbulence models for flow over a heated circular
+  cylinder.
+ In <em>Proceedings of 25<sup>th</sup> National and 3<sup>rd</sup> International
+  ISHMT-ASTFE Heat and Mass Transfer Conference (IHMTC&#x2013;2019)</em>, pages
+  1043&#x2013;1048, 2019.
+ 10.1615/IHMTC&#x2013;2019.1750.
+[&nbsp;<a href="http://dx.doi.org/10.1615/IHMTC--2019.1750">DOI</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Sakthivel2018680">3</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ An axisymmetric compact finite difference lattice Boltzmann method
+  for blood flow simulations.
+ In <em>International Conference on Computational Methods for Thermal
+  Problems</em>, number 223309, pages 680&#x2013;683, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Paghdar2018">4</a>]
+</td>
+<td class="bibtexitem">
+D.&nbsp;Paghdar and K.&nbsp;Anupindi.
+ Large eddy simulation of counter rotating taylor-couette flow at
+  high Reynolds numbers.
+ In <em>International Conference on Computational Methods for Thermal
+  Problems</em>, number 223309, pages 255&#x2013;258, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Polasanapalli2018">5</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;R.&nbsp;G. Polasanapalli and K.&nbsp;Anupindi.
+ Simulation of turbulent natural convection in annular cavity using a
+  high-order compact finite-difference LBM.
+ In <em>International Conference on Computational Methods for Thermal
+  Problems</em>, number 223309, pages 647&#x2013;650, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Anupindi2015">6</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi and R.&nbsp;D. Sandberg.
+ An embedded LES-RANS solver for aerodynamic simulations.
+ In <em>22nd AIAA Computational Fluid Dynamics Conference</em>, 2015.
+ 10.2514/6.2015-2920.
+[&nbsp;<a href="http://dx.doi.org/10.2514/6.2015-2920">DOI</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+
+	     <h2>Book Chapters</h2>
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Kakka2020247">1</a>]
+</td>
+<td class="bibtexitem">
+P.&nbsp;Kakka and K.&nbsp;Anupindi.
+ Study of Heat Transfer Characteristics in a Wall-Bounded Plane-Jet
+  Using Large-Eddy Simulation.
+ <em>ERCOFTAC Series</em>, 27:247&#x2013;255, 2020.
+ 10.1007/978-3-030-42822-8_32.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-030-42822-8\_32">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85085187633&amp;doi=10.1007%2F978-3-030-42822-8_32&amp;partnerID=40&amp;md5=cb7d0ba392febeea2004c2914b2d7dea">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Anupindi2018297">2</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi and R.&nbsp;D. Sandberg.
+ An embedded flow simulation methodology for flow over fence
+  simulations.
+ <em>ERCOFTAC Series</em>, 24:297&#x2013;303, 2018.
+ 10.1007/978-3-319-63212-4_37.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-319-63212-4\_37">DOI</a>&nbsp;| 
+<a href="https://www.scopus.com/inward/record.uri?eid=2-s2.0-85031906339&amp;doi=10.1007%2F978-3-319-63212-4_37&amp;partnerID=40&amp;md5=5bf89ab041e7eed16e8f353b54ba9132">http</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+
+<h2> Conference Presentations </h2>
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="AritraKanupindi_FMFP2020">1</a>]
+</td>
+<td class="bibtexitem">
+A.&nbsp;R. Choudhury, P.&nbsp;Kakka, and K.&nbsp;Anupindi.
+ Evaluation of Turbulence Models for an Offset Planar Wall Jet with
+  Heat Transfer.
+ In <em>Proceedings of the 8<sup>th</sup> International and 47<sup>th</sup>
+  National Conference on Fluid Mechanics and Fluid Power (FMFP)</em>, 2020.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Jogeefmp2020">2</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Jogee, K.&nbsp;Anupindi, and B.&nbsp;V. S. S.&nbsp;S. Prasad.
+ Large-eddy sim-ulation of flow over three side-by-side circular
+  cylinders.
+ In <em>8<sup>th</sup> International and 47<sup>th</sup> National Conference on
+  Fluid Mechanics and Fluid Power (FMFP), IIT Guwahati, Assam, India, 9 &#x2013; 11
+  December</em>, 2020.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Jogeeascht2019">3</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Jogee, K.&nbsp;Anupindi, and B.&nbsp;nbsp;V. S. S.&nbsp;S. Prasad.
+ Assessment of sub-grid scale models for flow over a heated circular
+  cylinder.
+ In <em>7<sup>th</sup> Asian Symposium on Computational Heat Transfer and
+  Fluid Flow, Tokyo, Japan, 3 &#x2013; 7 September</em>, 2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SakthivelKanupindi_IHMTC2019">4</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ Study of pulsatile flow through a model abdominal aortic aneurysm
+  using lattice Boltzmann method.
+ In <em>3<sup>rd</sup> International and 25<sup>th</sup> National ISHMT-ASTFE
+  Heat and Mass transfer conference (IHMTC 2019), IIT Roorkee, India</em>, 2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SakthivelKanupindi_ASCHT2019">5</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ Study of blood flow through a channel with model stenosis using
+  lattice Boltzmann method.
+ In <em>7<sup>th</sup> Asian Symposium on Computational Heat Transfer and
+  Fluid Flow-2019 (ASCHT 2019), Tokyo University of Science, Tokyo, Japan</em>,
+  2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Jogeeascht2019a">6</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;Jogee, K.&nbsp;Anupindi, and B.&nbsp;V. S. S.&nbsp;S. Prasad.
+ Assessment of sub-grid scale models for flow over a heated circular
+  cylinder.
+ In <em>7<sup>th</sup> Asian Symposium on Computational Heat Transfer and
+  Fluid Flow, Tokyo, Japan, 3 &#x2013; 7 September</em>, 2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SakthivelKanupindi_IHMTC2019a">7</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ Study of pulsatile flow through a model abdominal aortic aneurysm
+  using lattice Boltzmann method.
+ In <em>3<sup>rd</sup> International and 25<sup>th</sup> National ISHMT-ASTFE
+  Heat and Mass transfer conference (IHMTC 2019), IIT Roorkee, India</em>, 2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SakthivelKanupindi_ASCHT2019a">8</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ Study of blood flow through a channel with model stenosis using
+  lattice Boltzmann method.
+ In <em>7<sup>th</sup> Asian Symposium on Computational Heat Transfer and
+  Fluid Flow-2019 (ASCHT 2019), Tokyo University of Science, Tokyo, Japan</em>,
+  2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Ravi2020Roorkee">9</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;R.&nbsp;G. Polasanapalli and K.&nbsp;Anupindi.
+ Finite-difference lattice Boltzmann method for the simulations of
+  natural convection in a cubic cavity.
+ In <em>25<sup>th</sup> National and 3<sup>rd</sup> International ISHMT-ASTFE,
+  Heat and Mass Transfer Conference, IHMTC-2019, IIT Roorkee, India</em>, 2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Ravi2020">10</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;R.&nbsp;G. Polasanapalli and K.&nbsp;Anupindi.
+ Simulation of buoyancy driven flows in horizontal cylindrical annuli
+  using LBM.
+ In <em>7<sup>th</sup> Asian Symposium on Computational Heat Transfer and
+  Fluid Flow, ASCHT 2019, Tokyo</em>, 2019.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SakthivelKanupindi_FMFP2018">11</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ An axisymmetric compact finite difference lattice Boltzmann method
+  for pulsatile and non-Newtonian blood flow simulations.
+ In <em>7<sup>th</sup> International and 45<sup>th</sup> National conference on
+  Fluid Mechanics and Fluid Power (FMFP- 2018), IIT Bombay, India</em>, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="SakthivelKanupindi_Thermacomp2018">12</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;Sakthivel and K.&nbsp;Anupindi.
+ An axisymmetric compact finite difference lattice Boltzmann method
+  for blood flow simulations.
+ In <em>5<sup>th</sup> International conference on Computational methods
+  for thermal problems (ThermaComp2018), IISc-Bangalore, India</em>, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Ravi2018">13</a>]
+</td>
+<td class="bibtexitem">
+S.&nbsp;R.&nbsp;G. Polasanapalli and K.&nbsp;Anupindi.
+ Study of mixed convection in concentric annular cavity using a
+  compact finite difference lattice Boltzmann method.
+ In <em>7<sup>th</sup> International and 45<sup>th</sup> National Conference on
+  Fluid Mechanics and Fluid Power, FMFP2018, IIT Bombay, India</em>, 2018.
+
+</td>
+</tr>
+</table>
+
+<h2>Poster Presentations</h2>
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="10.1115/SBC2011-53549">1</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi, S.&nbsp;Frankel, J.&nbsp;Chen, D.&nbsp;Shetty, J.&nbsp;Kennington, J.&nbsp;DeGan, and M.&nbsp;D.
+  Rodefeld.
+ High-Order Large Eddy Simulation of Flow in Idealized and
+  Patient-Specific Total Cavopulmonary Connections.
+ volume ASME 2011 Summer Bioengineering Conference, Parts A and B of
+  <em>Summer Bioengineering Conference</em>, pages 1125&#x2013;1126, 06 2011.
+ 10.1115/SBC2011-53549.
+[&nbsp;<a href="http://dx.doi.org/10.1115/SBC2011-53549">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1115/SBC2011-53549">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="10.1115/SBC2011-53339">2</a>]
+</td>
+<td class="bibtexitem">
+J.&nbsp;DeGan, J.&nbsp;Kennington, K.&nbsp;Anupindi, D.&nbsp;Shetty, J.&nbsp;Chen, M.&nbsp;Rodefeld, and
+  S.&nbsp;Frankel.
+ Modeling of Patient-Specific Fontan Physiology From MRI Images for
+  CFD Testing of a Cavopulmonary Assist Device.
+ volume ASME 2011 Summer Bioengineering Conference, Parts A and B of
+  <em>Summer Bioengineering Conference</em>, pages 1103&#x2013;1104, 06 2011.
+ 10.1115/SBC2011-53339.
+[&nbsp;<a href="http://dx.doi.org/10.1115/SBC2011-53339">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1115/SBC2011-53339">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="UKTCAnupindi2014">3</a>]
+</td>
+<td class="bibtexitem">
+K.&nbsp;Anupindi and R.&nbsp;Sandberg.
+ Development of a Zonal LES-RANS Method for Compressible Flows.
+ In <em>The UK Turbulence Consortium Annual Workshop, Imperial
+  College, London, UK, September 2014</em>.
+[&nbsp;<a href="http://dx.doi.org/">DOI</a>&nbsp;| 
+<a href="">www:</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+	     <h2>Seminars and Invited Talks</h2>
+
+<OL>
+<LI><SPAN  CLASS="textit">Introduction to Turbulence Modeling</SPAN>, lectured in the ISTE sponsored one-week online Faculty Development Program titled ``Recent Advances in CFD and Its Applications'', organized by the Department of Mechanical Engineering, BMS College of Engineering, Bengaluru, India, October 01, 2021. 
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Averaging of compressible turbulence equations and their modeling</SPAN>, lectured in the AICTE sponsored short-term course titled ``Theory and Analysis of Compressible Turbulence'', organized by the Department of Aerospace Engineering, Indian Institute of Technology Madras, Chennai, India, March 23, 2021.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Flow and thermal characteristics of three-dimensional turbulent wall-jets</SPAN>, organized by The Centre for Fluid and Complex Systems, Coventry University, Coventry, UK, February 24, 2021. 
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Introduction to Large-Eddy Simulation</SPAN>, lectured in the AICTE sponsored short-term course tittled ``Advances in Experimental and Computational Fluid Mechanics'', organized by the Department of Mechanical Engineering, Indian Institute of Technology Madras, Chennai, India, November 1, 2018.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Healthy, Pathological and Medical Device Hemodynamics, Delivered a lecture in the AICTE sponsored short-term course titled Cardiovascular Solid and Fluid Mechanics</SPAN>, organized by the Department of Applied Mechanics, Indian Institute of Technology Madras, Chennai, India, March 21, 2017.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">An Embedded LES-RANS Solver for Aerodynamic Simulations</SPAN>, Department of Aerospace Engineering, Indian Institute of Technology Kanpur, India, April 22, 2016.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">Bio-fluid Applications</SPAN>, lectured in the AICTE sponsored short-term course titled ``Theoretical and Computational and Fluid Dynamics'', organized by the Department of Applied Mechanics, Indian Institute of Technology Madras, Chennai, India, November 23, 2015.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">An embedded LES-RANS solver for aerodynamic simulations</SPAN>, IISc-ISRO Seminar Series, Department of Aerospace Engineering, Indian Institute of Science, Bengaluru, India, July 14, 2015.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">A multi-block immersed boundary method for the simulation of pathological and medical device hemodynamics</SPAN>, Mechanical Engineering Seminar Series, Indian Institute of Science, Bengaluru, India, December 12, 2014.
+
+<P>
+</LI>
+<LI><SPAN  CLASS="textit">A novel multiblock IBM enabling high order LES of pathological and medical device hemodynamics</SPAN>, Aerodynamics and Flight Mechanics Research Group Seminar Series, University of Southampton, Southampton, UK, March 12, 2014.
+
+<P>
+</LI>
+</OL>
+
+<hr>
+<p><em>This file was generated by
+<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.99.</em></p>
+
+
+        </div>
+
+	<div id="tab4" class="tab_content">
+
+	    <h2>Courses taught at IIT Madras</h2>
+	    
+	  <ol>
+	    
+	    <li> ME6150, Numerical Methods in Thermal Engineering: Jan - May 2016, Jan - May 2017 
+	    </li>
+	    
+	    <li> ME1100, Thermodynamics: July - Nov 2016, July - Nov 2017, July - Nov 2018 
+	    </li>
+	    
+	    <li> ME6006/ME6151, Computational Heat and Fluid Flow: July - Nov 2017, Jan - May 2019, Jan - May 2020, Jan - May 2022
+
+<!--      <ul>
+
+		
+		<li> July - Nov 2017 </li> -->
+		
+	      <!-- <ul> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/Project_Report_Diffusion_Unstructured.pdf" target="blank">  -->
+	      <!-- 	      Diffusion on two-dimensional unstructured orthogonal and non-orthogonal meshes. -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/project_report_me6006_diffusion_on_unstructured_meshes.pdf" target="blank">  -->
+	      <!-- 	      Solution of diffusion equation on a triangular mesh in a square domain and a hexagonal domain. -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/project_report_me6006_IBM_CD.pdf" target="blank">  -->
+	      <!-- 	      Use of immersed boundary method to solve convection diffusion problem by finite volume method.  -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/project_report_me6006_natural_convection.pdf" target="blank">  -->
+	      <!-- 	      Numerical investigation of natural convection in a 2D square cavity. -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/Project_report_me6006_square_cylinder.pdf" target="blank">  -->
+	      <!-- 	      CFD analysis of 2D unsteady flow around a square cylinder. -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/Project_Report_ME6006_FVLBM.pdf" target="blank">  -->
+	      <!-- 	      Finite-volume based lattice Boltzmann method for incompressible flows.  -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+
+	      <!-- 	<li> -->
+	      <!-- 	  <p align="left"> -->
+	      <!-- 	    <a href = "./me6006/JulyNov2017/Project_Report_ME6006_Cavity.pdf" target="blank">  -->
+	      <!-- 	      Numerical simulation of lid driven cavity for different Reynolds number and aspect ratio. -->
+	      <!-- 	    </a>	 -->
+	      <!-- 	  </li> -->
+		  
+	      <!-- </ul> -->
+
+<!--		<li> Jan - May 2019 </li>
+		
+		<li> Jan - May 2020 </li> 
+	      </ul>-->
+	      
+	      </li>
+
+	    <li> ME6125, Theory of Steam and Gas Turbines: Jan - May 2018
+	    </li>
+	    
+	    
+	    <li> ME5103, Incompressible Fluid Flow: July - Nov 2019, Sept - Dec 2020, July - Nov 2021
+	    </li>
+	    
+   
+         <li> ID5130, Parallel Scientific Computing: Jan- May 2021, co-instructor: <a href="https://www.cse.iitm.ac.in/~rupesh/?mode=Home" target="blank"> Prof. Rupesh</a>
+	    </li>
+	    
+    
+    
+        <li> ME5201, Computational Methods in Engineering for web-enabled M.Tech.: April - July 2021
+	    </li>
+	    
+	  </ol>
+	  
+	  <h2>Massive Open Online Course (MOOC) </h2>
+	  
+	  <ol>
+	  
+  	    <li>Exciting new MOOC course on Computational Fluid Dynamics Using Finite Volume Method: 	    
+  	    <a href="https://swayam.gov.in/nd1_noc20_me82/preview" target="blank"> September - December 2020 	</a>, 
+        <a href="https://onlinecourses.nptel.ac.in/noc21_me112/preview" target="blank"> July - October 2021 </a>
+
+<!--	    </li>
+ 
+ 	    <ul>
+	    <li>  <a href="https://swayam.gov.in/nd1_noc20_me82/preview" target="blank"> September - December 2020 	 </a></li> 
+        <li>  <a href="https://onlinecourses.nptel.ac.in/noc21_me112/preview" target="blank"> July - October 2021 </a></li> 
+	    </ul>
+	    </li>-->
+
+	  </ol>
+
+	<!-- <h2>Asha Purdue Chapter</h2> -->
+	<!-- <p align="justify"> -->
+	<!-- 	 While at Purdue, I volunteered for the events organized by -->
+	<!-- 	 <a href="http://www.ashanet.org/purdue/" target="blank">Asha Purdue Chapter</a> as well as served as it's webmaster in the year 2011-2012.  -->
+	<!-- 	 Asha for education is a voluntary organization that promotes education among underprivileged children in India.  -->
+		 
+	<!-- 	 <h2>Hobbies</h2> -->
+		 
+	<!-- 	 <p align="justify"> My hobbies include, running, cycling, swimming and sketching. Together with <i>Team Asha Purdue Chapter</i> I participated in   -->
+	<!-- 	 the <i>5K Run</i> organized by Purdue Arthritis Foundation in March 2012 and in March 2013. -->
+		 
+        </div>
+
+	<div id="tab5" class="tab_content">
+
+	  <h2>Doctoral Students </h2>
+
+	  <ul>
+	    
+	    <li>Satyajit Choudhury (co-advised by Prof. Patnaik) (2015 - 2019) </li>
+	    <li>Sai Ravi Gupta Polasanapalli (2016 - 2020) </li>
+	    <li>Sakthi Vel (2016 - 2020) </li>
+	    <li>Sourabh Sadanand Jogee (co-advised by Prof. Prasad) (2017 - 2021) </li>
+
+	  </ul>
+	  
+	  <h2>M.S. Students </h2>
+	  
+        <h3>Present Students </h3>
+	  
+	  <ul>
+	    <li>Kuldeep Tolia (2021 - 2023)
+	    <li>Palaniappan Venkatachalam (co-advised by Prof. Sahu) (2019 - 2021) </li>
+	    <li>Aritra Roy Choudhury (2019 - 2021) </li>
+	  </ul>
+	  
+	  <h3>Alumni</h3>
+	  
+      <ul>
+	    <li>Priyesh Rajesh Kakka (2018 - 2020) </li>
+	  </ul>
+
+	  
+	  <h2>B. Tech, Dual-Degree and M. Tech. students </h2>
+
+	  <h3>Present Students </h3>
+
+	  <h4>2020 - 2022</h4>
+
+	  <ul>
+	    <li> Rohit Bisoi </li>
+	    <li> Melvin Sunny </li>
+	    <li> Shreekara Guruprasad </li>
+	    <li> Azhar Gafoor </li>
+	    <li> Siddharth Dey  </li>
+	  </ul>
+
+	  <h3>Alumni</h3>
+
+	  <h4>2019 - 2021</h4>
+
+	  <ul>
+	    <li> Mohil Chaudhari </li>
+	    <li> RVRKS Naveen </li>
+	  </ul>
+
+	  <h4>2018 - 2020</h4>
+
+	  <ul>
+	    <li> Sidharth R (co-advised by Prof. Sahu) </li>
+	    <li> Anup Ranjan </li>
+	  </ul>
+
+	  <h4>2017 - 2019</h4>
+
+	  <ul>
+	    <li>Khagesh Suresh Chaudhari </li>
+	    <li>Anup Vaman Barve (co-advised by Prof. Sahu)</li>
+	    <li>Gokul S. Nair </li>
+	    <li>Bhanu Mitra Bulusu </li>
+	  </ul>
+	  
+	  
+	  <h4>2016 - 2018</h4>
+	  
+	  <ul>
+	    <li>Paghdhar Dhavalkumar Mansukhbhai </li> 
+	    <li>Karthik Nishanth </li>
+	    <li>Akshay Soo </li>
+	    <li>Sriramdas Venkata Ramana </li>
+	    <li>Indresh Tiwari (co-advised by Prof. Sahu) </li>
+	  </ul>
+
+	  <h4>2015 - 2017</h4>
+
+	  <ul>
+	    <li>Vignesh Banusekar (co-advised by Prof. Chatterjee) </li>
+	    <li>M. Vidyasagar (co-advised by Prof. Pattamatta)  </li> 
+	    <li>Sriphani Srikanth Akkireddy (co-advised by Prof. Sahu) </li>
+	  </ul>
+
+        </div>
+		   
+
+        <div id="tab6" class="tab_content">
+
+	  <h2>Linux/Programming Documents</h2>
+
+	  <ul>
+
+	  <li>
+	  <p align="left"> I use git for managing my research codes. Although there are many resources available online on using <i>git</i>, I wrote one by myself and it is here 
+	  <a href = "./course_projects/git_tutorial.pdf" target="blank">Elegant code management using Git</a>	
+	  </li>
+
+	  <li>
+	  <p align="left"> High Performance Computing at  
+	  <a href = "https://www.cac.cornell.edu/VW/topics.aspx" target="blank">Cornell Virtual Workshop</a>	
+	  </li>
+
+	  <li>
+	  <p align="left"> High Performance Computing training at   
+	  <a href = "https://computing.llnl.gov/?set=training&page=index" target="blank">Lawrence Livermore National Labs</a>	
+	  </li>
+
+	  </ul>
+
+	<h2><font color="#000000">Links</font></h2>
+	  
+	<ul>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://richardstjohn.com/videos/" target="_blank">Want to be successful? listen to Richard St. John</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://cgi.stanford.edu/~dept-ctl/tomprof/postings.php" target="_blank">Tomorrow's Professor Blog (source: Stanford University)</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.pitt.edu/~druzdzel/feynman.html" target="_blank">Richard Feynman on Teaching</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.cs.virginia.edu/~evans/talks/metatalk/" target="_blank">How to Give a Talk So Good There Will be Pizza Left For You - David Evans</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.cs.cmu.edu/~pausch/Randy/Randy/raibert.htm" target="_blank">Good Writing - Marc H. Raibert</a>	
+	    </font></p>
+	  </li>
+
+	</ul>
+
+	<h2><font color="#000000">TED Talks</font></h2>
+
+	<ul>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/apollo_robbins_the_art_of_misdirection" target="_blank">The art of misdirection - Apollo Robbins
+	    </a> </font></p>
+	  </li>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/louie_schwartzberg_hidden_miracles_of_the_natural_world" target="_blank">Hidden miracles of the natural world - Louie Schwartzberg
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success" target="_blank">Secrets of success - Richard St. John
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/steve_jobs_how_to_live_before_you_die" target="_blank">How to live before you die - Steve Jobs
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/vijay_kumar_robots_that_fly_and_cooperate" target="_blank">Robots that fly and cooperate - Vijay Kumar
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.inktalks.com/discover/645/usha-uthup-skyfall-in-a-sari" target="_blank">Skyfall in a sari - Usha Uthup
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/chris_hadfield_what_i_learned_from_going_blind_in_space" target="_blank">What I learned from going blind in space - Chris Hadfield
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/allan_savory_how_to_green_the_world_s_deserts_and_reverse_climate_change" target="_blank">How to green the world's deserts and reverse climate change - Allan Savory 
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/sheena_iyengar_choosing_what_to_choose" target="_blank">Choosing what to choose - Sheena Iyengar
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/louie_schwartzberg_the_hidden_beauty_of_pollination" target="_blank">The hidden beauty of pollination - Louie Schwartzberg
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/arvind_gupta_turning_trash_into_toys_for_learning" target="_blank">Turning trash into toys for learning - Arvind Gupta
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/bertrand_piccard_s_solar_powered_adventure" target="_blank">My solar-powered adventure - Bertrand Piccard
+	    </a> </font></p>
+	  </li>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory" target="_blank">The riddle of experience vs memory - Daniel Kahneman
+	    </a> </font></p>
+	  </li>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/jk_rowling_the_fringe_benefits_of_failure" target="_blank">The fringe benefits of failure - J K Rowling
+	    </a> </font></p>
+	  </li>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="https://www.ted.com/talks/larry_smith_why_you_will_fail_to_have_a_great_career?language=en" target="_blank">
+		  Why you will fail to have a great career - Larry Smith
+	    </a> </font></p>
+	  </li>
+
+	</ul>
+   
+        </div>
+
+        <div id="tab7" class="tab_content">
+          <table width="500px">
+	    <tr valign="top"><td style="padd-">Contact:
+		    </td> <td>
+		    Kameswararao Anupindi<br>
+		    Room no. 326, NAC-I,<br>
+		    Department of Mechanical Engineering<br>Indian Institute of Technology Madras<br>Chennai, TN, India<br>600 036</td></tr>
+    		    <tr valign="top"><td>Phone:</td> <td>+91-44-22574695</td></tr>
+		    <tr valign="top"><td>E-mail:</td> <td> <a href="mailto:kanupindi@iitm.ac.in?subject=Hello"><font color="#463838">kanupindi@iitm.ac.in</font></a></td></tr>	
+		    <tr valign="top"><td>Profile:</td> <td><a href="http://scholar.google.com/citations?user=evjJ8sAAAAAJ" target="_blank">Google Scholar Profile</a></td></tr>
+    	    </table>
+</div>
+
+</div>
+</div>
+
+
+</body>
+
+
+</html>
+
