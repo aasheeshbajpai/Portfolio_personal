@@ -1,0 +1,14 @@
+########## for Nitrogen #############
+#units are metal
+
+mass 1 14.0067	#mass of N atoms of gas
+
+pair_style lj/cut 12.0
+pair_coeff * * 0.004067554  3.17  #Epsiolon =0.0069375 (energy in eV) sigma (in distance units)
+
+bond_style      harmonic   # E= K(r-r0)^2 . Need to define K (energy/distance^2) and r0 (distance)
+bond_coeff      1 286.4852928 1.098
+
+
+#bond_style morse # E = D[1-exp{1-beta(x-x0)}]^2 # Define D (energy), beta(distance inverse), x0 (distance)
+#bond_coeff 1 9.9 9.9 9.9
