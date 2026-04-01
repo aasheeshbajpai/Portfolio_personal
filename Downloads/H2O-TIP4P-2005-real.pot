@@ -1,0 +1,47 @@
+# This forcefield file sets a 13-Angstrom cutoff, recommended for liquid-
+# vapor simulations [Vega & de Miguel, J Chem Phys 126:154707 (2007),
+# Vega et al, Faraday Discuss 141:251 (2009)]                         
+# Note that the original TIP4P/2005 model was run with an 8.5 Angstrom 
+# cutoff [Abascal & Vega, J Chem Phys 123:234505 (2005)]. 
+# Charges and geometry are specified in the "data." file.
+# units are metal
+
+#For the TIP4P pair potential, the 2 H atoms must have IDs 1 and 2 larger than the O atom ID.  This is how LAMMPS "finds" the 2 H atoms associated with the O.  So if atom 10000 is an O in a TIP4P water molecule, then its 2 H atoms must be 10001 and 10002.
+
+
+mass 1 15.9994 # O  
+mass 2 1.00794 # H 
+
+pair_style lj/cut/tip4p/long 1 2 1 1 0.1546 13.0   #/cut or /long
+pair_modify tail yes
+kspace_style pppm/tip4p 1.0e-5 #with /long
+
+pair_coeff 1 1 0.18520 0.136982904
+pair_coeff 2 2 0.0 0.0
+pair_coeff 1 2 0.0 0.0	
+
+bond_style harmonic
+bond_coeff 1 0.0 0.9572  #K (energy/distance^2)    r0 (distance)
+
+angle_style harmonic
+angle_coeff 1 0.0 104.52 
+
+#lj/cut/tip4p/cut args = otype htype btype atype qdist cutoff (cutoff2)
+#otype,htype = atom types for TIP4P O and H
+#btype,atype = bond and angle types for TIP4P waters
+#qdist = distance from O atom to massless charge (distance units) (Angstrom for both metal and real)
+#cutoff = global cutoff for LJ (and Coulombic if only 1 arg) (distance units)
+#cutoff2 = global cutoff for Coulombic (optional) (distance units)
+
+#Note that the neighbor list cutoff for Coulomb interactions is effectively extended by a distance 2*qdist when
+#using the TIP4P pair style, to account for the offset distance of the fictitious charges on O atoms in water
+#molecules. Thus it is typically best in an efficiency sense to use a LJ cutoff >= Coulomb cutoff + 2*qdist, to
+#shrink the size of the neighbor list. This leads to slightly larger cost for the long-range calculation, so you can
+#test the trade-off for your model.
+
+#For all of the lj/cut pair styles, the following coefficients must be defined for each pair of atoms types via the pair_coeff command as in the examples above, or in the data file or restart files read by the read_data or read_restart commands, or by mixing as described below:
+#· epsilon (energy units)
+#· sigma (distance units)
+#· cutoff1 (distance units)
+#· cutoff2 (distance units)
+#Note that sigma is defined in the LJ formula as the zero-crossing distance for the potential, not as the energy minimum at 2^(1/6) sigma. The latter 2 coefficients are optional. If not specified, the global LJ and Coulombic cutoffs specified in the pair_style command are used.
