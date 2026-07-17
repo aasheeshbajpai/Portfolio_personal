@@ -1,53 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        // Initialize tabs
-        function activateTab(tabName) {
-            $(".tab_content").hide();
-            $("ul.tabs li").removeClass("active");
-            
-            if (tabName && $(tabName).length) {
-                $(tabName).show();
-                $("ul.tabs li a[href='" + tabName + "']").parent().addClass("active");
-            } else {
-                $(".tab_content:first").show();
-                $("ul.tabs li:first").addClass("active");
-            }
-        }
-        
-        // Get initial tab from URL hash
-        var initialTab = window.location.hash;
-        if (!initialTab || !$(initialTab).hasClass('tab_content')) {
-            initialTab = '#tab1';
-        }
-        activateTab(initialTab);
-        
-        // Handle tab clicks
-        $("ul.tabs li a").click(function(e) {
-            e.preventDefault();
-            var tabName = $(this).attr("href");
-            window.location.hash = tabName;
-            activateTab(tabName);
-            return false;
-        });
-        
-        // Handle back/forward buttons
-        $(window).on('hashchange', function() {
-            var tabName = window.location.hash;
-            if (!tabName || !$(tabName).hasClass('tab_content')) {
-                tabName = '#tab1';
-            }
-            activateTab(tabName);
-        });
-    });
-    </script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+<link href="style.css" rel="stylesheet" type="text/css">
+  <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <script type="text/javascript" 
+     src="https://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+	  //Initialize tabs with hash persistence
+	  function activateTab(tabName) {
+		  $(".tab_content").hide();
+		  $("ul.tabs li").removeClass("active");
+		  if (tabName && $(tabName).length) {
+			  $(tabName).show();
+			  $("ul.tabs li a[href='" + tabName + "']").parent().addClass("active");
+		  } else {
+			  $(".tab_content:first").show();
+			  $("ul.tabs li:first").addClass("active");
+		  }
+	  }
+	  
+	  // Get initial tab from URL hash
+	  var initialTab = window.location.hash;
+	  if (!initialTab || !$(initialTab).hasClass('tab_content')) {
+		  initialTab = '#tab1';
+	  }
+	  activateTab(initialTab);
+	  
+	  //On Click Event
+	  $("ul.tabs li").click(function() {
+		  var tabName = $(this).find("a").attr("href");
+		  window.location.hash = tabName;
+		  activateTab(tabName);
+		  return false;
+	  });
+	  
+	  // Handle back/forward buttons
+	  $(window).on('hashchange', function() {
+		  var tabName = window.location.hash;
+		  if (!tabName || !$(tabName).hasClass('tab_content')) {
+			  tabName = '#tab1';
+		  }
+		  activateTab(tabName);
+	  });
+
+  });
+  </script>
 
     <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -59,276 +59,724 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-    </script>
-    
-    <title>Aasheesh Bajpai - Portfolio</title>
+  </script>
+  <title>Aasheesh Bajpai -Webpage </title>
 </head>
 
 <body>
 
 <div class="container">
+	
     <ul class="tabs">
         <li><a href="#tab1">Home</a></li>
         <li><a href="#tab2">Academic Profile</a></li>
         <li><a href="#tab3">Publications</a></li>
-        <li><a href="#tab4">Teaching</a></li>
-        <li><a href="#tab5">Research Work</a></li>
-        <li><a href="#tab6">Useful Material</a></li>
-        <li><a href="#tab7">Contact</a></li>
+	<li><a href="#tab4">Teaching</a></li>
+	<li><a href="#tab5">Research Work</a></li>
+	<li><a href="#tab6">Useful Material</a></li>
+	<li><a href="#tab7">Contact</a></li>
+	
     </ul>
-    
     <div class="tab_container">
         <div id="tab1" class="tab_content">
-            <div class="profile-card">
-                <img src="style/personal_photo1.jpg" alt="Profile Photo" class="profile-photo" width="220" />
-                <div class="profile-info">
-                    <h1>Aasheesh Bajpai</h1>
-                    <p class="title">Prime Minister Research Fellow</p>
-                    <p class="institution"><a href="https://iitk.ac.in/aero/" target="_blank">Department of Aerospace Engineering</a></p>
-                    <p class="institution"><a href="https://www.iitk.ac.in/" target="_blank">Indian Institute of Technology Kanpur</a></p>
-                    <a href="./Downloads/Aasheesh_Bajpai_Resume.pdf" target="_blank" class="cv-button">Download CV</a>
-                </div>
-            </div>
-            
-            <hr>
-            
+<!--             	background="greybg.jpg" -->
+            <!-- <TABLE  background="greybg.jpg" width ="980"> -->
+            <TABLE  width ="980">
+	<tr>
+	<td>
+	    <img src="style/personal_photo1.jpg" width="220" /> </p>
+	    <p><font size="4">Aasheesh Bajpai</font></p>
+	    <p>Prime Minister Research Fellow</p>
+	    <p><a href="https://iitk.ac.in/aero/" target ="_blank">
+	       Department of Aerospace Engineering</a></p>
+	    <p><a href="https://www.iitk.ac.in/" target="_blank">
+		Indian Institute of Technology Kanpur</font></a></p>
+	  <a href = "./Downloads/Aasheesh_Bajpai_Resume.pdf" target="_blank">Curriculum Vitae</font></a> 
+	</td>
+	</tr>
+       </TABLE>
+    	    <hr>
             <p align="justify">
-                Hello, welcome to my webpage. I am currently working as a prime minister research fellow at the
-                <a href="https://iitk.ac.in/aero/" target="_blank">Department of Aerospace Engineering</a> 
-                at <a href="https://www.iitk.ac.in/" target="_blank">Indian Institute of Technology Kanpur</a>, Kanpur (U.P.), India.
-            </p>
+	      Hello, welcome to my webpage.
+	      I am currently working as a prime minister research fellow at the
+	      <a href="https://iitk.ac.in/aero/" target="_blank">Department of Aerospace Engineering</a> 
+	      at <a href="https://www.iitk.ac.in/" target="_blank"> Indian Institute of Technology Kanpur</a>, Kanpur (U.P.), India.
 
-            <p align="justify">
-                Before moving to Kanpur, I worked as a research assistant at
-                <a href="http://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a>,
-                West Bengal, India. My appointment as PMRF was possible through research opportunity I got during my time at the lab, I worked on enhancing exergetic efficiency of hydrogen liquefaction plant.
-            </p>
+	   <p align="justify">
+	   Before moving to Kanpur, I worked as a research assistant at
+	   <a href="http://www.iitkgp.ac.in/" target="_blank"> IIT Kharagpur</a>,
+	   West Bengal, India. My appointment as PMRF was possible through research opportunity I got during my time at the lab, I worked on enhancing exergetic efficiency of hydrogen liquefaction plant.
 
-            <p align="justify">
-                I am pursuing my doctoral studies under the guidance of
-                <a href="https://home.iitk.ac.in/~rkm/" target="_blank">Professor Rakesh Kumar Mathpal</a>, 
-                in the 
-                <a href="https://home.iitk.ac.in/~rkm/" target="_blank">non-equillibrium flow simulation laboratory(NFSL)</a>, 
-                <a href="https://www.iitk.ac.in/" target="_blank">IIT Kanpur</a>. 
-                My research is on developing a coupled DSMC-DEM (Direct Simulation Monte Carlo -Discrete Element Method) framework for dusty gas flow simulation and analyzing the basic physics understanding behind lunar landing.
-                In any space exploration mission during planetary descent, when a lander approaches towards the surface of an extraterrestrial body, the expanded supersonic plume from the nozzle exhaust of the engine produces a shock, fluidizes, and ejects granular particles from a surface. 
-                This creates one or more craters, and as a result, soil particles gain momentum.
-                Consequently, this ejected matter would disperse dust and larger debris. 
-                The particles that are so dispersed have the potential to do severe damage.
-                The present work aims to develop a high-fidelity simulation framework capable of modeling dusty gas flows encountered during plume surface interactions.
-            </p>
+	   <p align="justify">
+	   I am pursuing my doctoral studies under the guidance of
+	   <a href="https://home.iitk.ac.in/~rkm/" target="_blank">Professor Rakesh Kumar Mathpal</a>, 
+	   in the 
+	   <a href="https://home.iitk.ac.in/~rkm/" target="_blank">non-equillibrium flow simulation laboratory(NFSL)</a>, 
+	   <a href="https://www.iitk.ac.in/" target="_blank"> IIT Kanpur</a>. 
+	   My research is on developing a coupled DSMC-DEM (Direct Simulation Monte Carlo -Discrete Element Method) framework for dusty gas flow simulation and  analyzing the basic physics
+	   understanding behind lunar landing.
+	   In any space exploration mission during planetary descent, when a lander approaches towards the surface of an extraterrestrial body, the expanded supersonic plume from the nozzle exhaust of the engine produces a shock, fluidizes, and ejects granular particles from a surface. 
+	   This creates one or more craters, and as a result, soil particles gain momentum.
+	   Consequently, this ejected matter would disperse dust and larger debris. 
+	   The particles that are so dispersed have the potential to do severe damage.
+	   The present work aims to develop a high-fidelity simulation framework capable of modeling dusty gas flows encountered during plume surface interactions.
+	   The research work aims at performing dusty gas flow dynamics using a particle-based Lagrangian-Lagrangian computational framework.
+	   The solver that is developed for dusty gas flows is by coupling the in-house DSMC flow solver with the in-house DEM solver. Along with that I have also developed a CFD-DEM coupled 
+	   solver for continuum applications along with my group in OpenFoam platform. This solver is used to calculate the crater diameter during lunar landing and shock particle interactions.
+	   The solver is a dusty gas flow solver which is well verified for supersonic dusty gas flows and have been used for applications like dusty gas flow over a cylinder and shock 
+	   granular particle curtain interactions in shock tube. 	   
+	    </p>
+	    
+	   In my previous academic pursuit, I was enrolled as a Masters student in the
+	      <a href="http://www.iitkgp.ac.in/department/CR/faculty/cr-psghosh" target="_blank">
+		Process Equipment & Design Laboratory (PED lab) </a>at the
+	   <a href="http://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>.
+	    My research primarily centered around the development of a Reverse Brayton Cryocooler (RBC)
+		tailored for cooling high-temperature superconducting (HTS) cables.
+	  I worked under the guidance of 
+		<a href="http://www.iitkgp.ac.in/cv/cr-psghosh" target="_blank">Professor Parthasarathi Ghosh</a> towards my thesis on 
+		"Development of test rig towards experimental investigation of Reverse Brayton Cryocooler used for
+		cooling of High Temperature Superconductors". During this period, I played a pivotal role in the conversion of a decommissioned helium liquifier into a Reverse Brayton cryocooler.
+		In this work we utilised heat exchangers and turboexpanders of helium liquifier to build a RBC for HTS cooling. Specifically, I was responsible for estimating the parameters of all heat exchang[...]
+		Prior to pursuing postgraduate studies,  I successfully completed my Mechanical Engineering  from <a href="https://www.akgec.ac.in/" target="_blank">AKG Engineering College (AKTU, Lucknow)</a>,[...]
+		Ghaziabad, Uttar Pradesh .
+	   </p>
+          
 
-            <p align="justify">
-                In my previous academic pursuit, I was enrolled as a Masters student in the
-                <a href="http://www.iitkgp.ac.in/department/CR/faculty/cr-psghosh" target="_blank">
-                Process Equipment & Design Laboratory (PED lab)</a> at the
-                <a href="http://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>.
-                My research primarily centered around the development of a Reverse Brayton Cryocooler (RBC)
-                tailored for cooling high-temperature superconducting (HTS) cables.
-                I worked under the guidance of 
-                <a href="http://www.iitkgp.ac.in/cv/cr-psghosh" target="_blank">Professor Parthasarathi Ghosh</a> towards my thesis on 
-                "Development of test rig towards experimental investigation of Reverse Brayton Cryocooler used for cooling of High Temperature Superconductors".
-                Prior to pursuing postgraduate studies, I successfully completed my Mechanical Engineering from <a href="https://www.akgec.ac.in/" target="_blank">AKG Engineering College (AKTU, Lucknow)</a>, Ghaziabad, Uttar Pradesh.
-            </p>
+	   <p align="justify">
+	    <hr>
+	      <!-- Last updated: 13 April 2022 -->
+	   </p>
 
-            <p align="justify">
-                <hr>
-            </p>
         </div>
 
         <div id="tab2" class="tab_content">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Gas-Granular flows or dusty gas flows</li>
-                <li>Lunar landing, Erosion, Crater formation</li>
-                <li>Framework (solver) development, parallel programming, HPC, Fortran, python, C++, OpenFOAM, SPARTA, LIGGGHTS, LAMMPS, Ovito, Paraview</li>
-                <li>Discrete Element Method (DEM)</li>
-                <li>Direct Simulation Monte Carlo (DSMC)</li>
-                <li>CFD-DEM coupled simulations, Particle-laden flows</li>
-                <li>Molecular Gas Dynamics, Non-equillibrium gas flows</li>
-                <li>Granular flows, Silo flows, chute flow, landslide dynamics</li>
-                <li>Computational Fluid Dynamics (CFD)</li>
-                <li>Shock Waves, unsteady gas dynamics</li>
-                <li>Experimental fluid dynamics, shock tube, blast wave</li>
-                <li>Shock Particle Interactions, Shocklets, Shock induced instabilities</li>
-                <li>High-Speed Gas Dynamics</li>
-            </ul>	
+	    <h2>Research Interests</h2>
+		<ul>
+		<li>Gas-Granular flows or dusty gas flows</li>
+		<li>Lunar landing, Erosion, Crater formation</li>
+		<li>Framework (solver) development, parallel programming, HPC, Fortran, python, C++, OpenFOAM, SPARTA, LIGGGHTS, LAMMPS, Ovito, Paraview</li>
+		<li>Discrete Element Method (DEM)</li>
+		<li>Direct Simulation Monte Carlo (DSMC)</li>
+		<li>CFD-DEM coupled simulations, Particle-laden flows</li>
+		<li>Molecular Gas Dynamics, Non-equillibrium gas flows</li>
+		<li>Granular flows, Silo flows, chute flow, landslide dynamics</li>
+		<li>Computational Fluid Dynamics (CFD)</li>
+		<li>Shock Waves, unsteady gas dynamics</li>
+		<li>Experimental fluid dynamics, shock tube, blast wave</li>
+		<li>Shock Particle Interactions, Shocklets, Shock induced instabilities</li>
+		<li>High-Speed Gas Dynamics</li>
+		</ul>	
 
-            <h2>Reviewer</h2>
+		<h2>Reviewer</h2>
             <table cols="2" width="750">
-                <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
-                <tr valign="top"><td><b>Jan 2023 - Present</b></td> <td><b>Physics of Fluids (AIP)</b></td></tr>
-            </table>
+    		<colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+  
+   		<tr valign="top"><td><b>Jan 2023 - Present</b></td> <td><b>Physics of Fluids (AIP)</b> <br> </td></tr>
+    	   </table>
 
             <h2>Education</h2>
             <table cols="2" width="750">
-                <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
-                <tr valign="top"><td><b>Jan 2020 - Present</b></td> <td><b>Ph.D. in Aerospace Engineering (CPI:10/10).</b> <br> Indian Institute of Technology Kanpur, UP, India.</td></tr>
-                <tr valign="top"><td><b>July 2017 - May 2019</b></td> <td><b>M.Tech. in Cryogenic Engineering.</b> <br> Indian Institute of Technology Kharagpur, WB, India.</td></tr> 
-                <tr valign="top"><td><b>July 2012 - June 2016</b></td> <td><b>B.Tech. in Mechanical Engineering.</b> <br> Uttar Pradesh Technical University (UPTU) India.</td></tr>	
-            </table>
+    		<colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+  
+   		<tr valign="top"><td><b>Jan 2020 - Present</b></td> <td><b>Ph.D. in Aerospace Engineering (CPI:10/10).</b> <br> Indian Institute of Technolgoy Kanpur, UP, India.</td></tr>
+			 </br> <a href="./Downloads/Marksheet.png" target="blank">Marksheet </a>
+			  <!a href="./Downloads/Offer_Letter_IITk_pmrf_2020.pdf" target="blank">Letter </a>
+			<tr valign="top"><td><b>July 2017 - May 2019</b></td> <td><b>M.Tech. in Cryogenic Engineering.</b> <br> Indian Institute of Technolgoy Kharagpur, WB, India.</td></tr> 
 
-            <h2>Teaching Experience (as a student)</h2>
-            <table cols="2" width="750">
-                <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
-                <tr valign="top"><td><b>Fall 2018</b></td> <td><b>Teaching Assistant</b> CR61011: Compressors and Pumps</td></tr> 
-                <tr valign="top"><td><b>Spring 2019</b></td> <td><b>Teaching Assistant</b> CR61022: Cryogenic Expansion Devices (Turbomachinary)</td></tr>
-                <tr valign="top"><td><b>Spring 2021</b></td> <td><b>Teaching Assistant</b> ESO201A: Thermodynamics</td></tr> 	 
-                <tr valign="top"><td><b>Fall 2021</b></td> <td><b>Teaching Assistant</b> AE451(A): Aerodynamics Experiments</td></tr> 	
-                <tr valign="top"><td><b>Fall 2021</b></td> <td><b>Teacher</b> Introduction to Thermodynamics</td></tr> 
-                <tr valign="top"><td><b>Spring 2022</b></td><td><b>Live tutor</b> <b>NPTEL: Introduction to Programming in C</b><br> <em>Prof Satyadev Nandakumar</em><br> <a href="./Downloads/C.pdf" target="blank">Certification from NPTEL, IIT Kanpur</a></td></tr>
-                <tr valign="top"><td><b>Fall 2022</b></td><td><b>Live tutor</b> <b>NPTEL: Computational Fluid Dynamics and Heat Transfer</b><br> <em>Prof Gautam Biswas</em><br> <a href="./Downloads/2300304.pdf" target="blank">Certification from NPTEL, IIT Madras</a></td></tr>
-            </table>
-        </div>
+			<tr valign="top"><td><b>July 2012 - June 2016</b></td> <td><b>B.Tech. in Mechanical Engineering.</b> <br> Uttar Pradesh Technical University (UPTU) India.</td></tr>	
+    	   </table>
+	    
+	   
+
+	  </table>
+
+	  <h2>Teaching Experience (as a student)</h2>
+	  <table cols="2" width="750">
+	  <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+
+	  <tr valign="top"><td><b>Fall   2018 </b></td> <td><b>Teaching Assistant </b> CR61011: Compressors and Pumps </td></tr> 
+
+	  <tr valign="top"><td><b>Spring 2019 </b></td> <td><b>Teaching Assistant</b> CR61022: Cryogenic Expansion Devices (Turbomachinary)</td></tr>
+	  
+	  <tr valign="top"><td><b>Spring 2021 </b></td> <td><b>Teaching Assistant</b> ESO201A: Thermodynamics</td></tr> 	 
+	  
+	  <tr valign="top"><td><b>Fall 2021 </b></td> <td><b>Teaching Assistant</b> AE451(A): Aerodynamics Experiments </td></tr> 	
+
+	  <tr valign="top"><td><b>Fall 2021 </b></td> <td><b>Teacher</b> Introduction to Thermodynamics </td></tr> 
+	  
+	  <tr valign="top"><td><b>Spring 2022 </b></td><td><b> Live tutor </b> <b>NPTEL: Introduction to Programming in C</b>
+							    <br> <em>Prof Satyadev Nandakumar</em>
+							    <br> <a href="./Downloads/C.pdf" target="blank">Certification from NPTEL, IIT Kanpur </a>
+								
+	  <tr valign="top"><td><b>Fall 2022 </b></td><td><b> Live tutor </b> <b>NPTEL: Computational Fluid Dynamics and Heat Transfer</b>
+							    <br> <em>Prof Gautam Biswas</em>
+							    <br> <a href="./Downloads/2300304.pdf" target="blank">Certification from NPTEL, IIT Madras</a>
+								
+	  <tr valign="top"><td><b>Fall 2023 </b></td><td><b> Tutor </b> <b>AITH Kanpur: Heat Transfer Operations and Heat Exchanges</b>
+							    <br> <a href="./Downloads/certificate_1_AITH.pdf" target="blank">Certification from AITH, Kanpur</a>
+								
+	  <tr valign="top"><td><b>Fall 2023 </b></td><td><b> Live tutor </b> <b>NPTEL: Computational Fluid Dynamics and Heat Transfer</b>
+							    <br> <em>Prof Gautam Biswas</em>
+							    <br> <a href="./Downloads/2300304-ME94.pdf" target="blank">Certification from NPTEL, IIT Madras</a>
+
+	   <tr valign="top"><td><b>Fall 2023 </b></td><td><b> Teaching Assistant </b> <b>NPTEL: Computational Fluid Dynamics and Heat Transfer</b>
+							    <br> <em>Prof Gautam Biswas</em>
+							    <br> <a href="./Downloads/aasheesh@iitk.ac.in_noc23-me94.jpg" target="blank">Certification from NPTEL</a>
+	  
+	  
+								
+	
+	  
+	  </table>	
+	  
+	  
+	  
+	
+
+	  
+	 
+	  <h2>Trainings </h2>
+	  <table cols="3" width="750">
+	  <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+	  
+	  <tr valign="top"><td><b>02 October -- 07 October 2023 </b></td><td>      <b>CISM advanced Course</b>
+							    <br> <em>"Landslides Mechanics: from Complex Granular Behaviour to Field-Scale Flows", organised by CISM, Udine, Italy </em>
+							    </br> <a href="./Downloads/" target="blank">Certificate </a>
+	  
+	  <tr valign="top"><td><b>09 July -- 14 July 2023 </b></td><td>      <b>Workshop for experiments in fluid dynamics</b>
+							    <br> <em>"ADVANCED MEASUREMENT TECHNIQUES IN FLUID MECHANICS", organised by IISc Bangalore </em>
+							    </br> <a href="./Downloads/Certificate_IISc.jpeg" target="blank">Certificate </a>
+
+	  <tr valign="top"><td><b>05 Dec -- 09 Dec 2022 </b></td><td>      <b>Short term GIAN course</b>
+							    <br> <em>"Multiphase Combustion: Theory and Modelling", organised by IIT Kanpur </em>
+							    <br> <a href="./Downloads/Multiphase_Aasheesh_Bajpai_GIAN.pdf" target="blank">Certificate </a>
+
+	  <tr valign="top"><td><b>17 May -- 20 May 2022 </b></td><td>      <b>HPC in CFD</b>
+							    <br> <em>"High Performance Computing (HPC) for Computational Fluid Dynamics (CFD) Applications", organised by IIT Bombay and C-DAC under the aegis of National Supercomputing Mission ([...]
+							    <br> <a href="./Downloads/Online_CFD_Workshop__229.pdf" target="blank">Certificate </a>
+
+
+	  <tr valign="top"><td><b>July 2015 -- August 2015 </b></td><td>      <b>National Thermal Power Corporation, Dadri</b>
+							    <br> <em>Vocational Training for plant working understanding</em>
+								<br> <em>Boiler maintenance and Ash handling department, learnt about power plant process, Rankine cycle and various equipment used etc. Also submitted a project report on working of coo[...]
+								<br> <a href="./Downloads/NTPC.pdf" target="blank">Certificate </a>
+	 <tr valign="top"><td><b>June 2014 -- July 2014 </b></td><td>      <b>Indian Railways</b>
+							    <br> <em>In workshop training Indian Railways workshop, Izzatnagar, Bareilly</em>
+								<br> <em>Braking system in locomotive (Air brakes, pneumatic brakes), working of engine of locomotive, carriage maintenance.</em>
+								<br> <a href="./Downloads/INRailways.pdf" target="blank">Certificate </a>
+	  </table>	
+	  <h2>Course Projects (as a student at IIT) </h2>
+	  <table cols="2" width="750">
+	  <colgroup><col width="200"></colgroup><colgroup><col></colgroup>
+
+	  
+
+	  <tr valign="top"><td><b>AE694 (Spring 2020) </b></td><td>      <b>Acoustics in fluids (Prof. Sathesh Mariappan)</b>
+							    <br> <em>Natural frequencies and their mode shapes for different geometries</em>
+							    <br> <a href="./Downloads/AE694_19201261.pdf" target="blank">Report </a>
+
+	   <tr valign="top"><td><b>ME617(A) (Spring 2020) </b></td><td>      <b>Advance theory of turbomachinery (Prof. Subrata Sarkar)</b>
+							    <br> <em>Secondary Flow In Turbomachinery: Theory And Losses</em>
+							    <br> <a href="./Downloads/Term1 _Aasheesh Bajpai_19201261.pdf" target="blank">Term paper 1 </a>
+	   
+	    <tr valign="top"><td><b>ME617(A) (Spring 2020) </b></td><td>      <b>Advance theory of turbomachinery (Prof. Subrata Sarkar)</b>
+							    <br> <em>Tip-leakage Flows In Axial Flow Turbines</em>
+							    <br> <a href="./Downloads/Term2Turbo.pdf" target="blank">Term paper 2 </a>
+								
+	    <tr valign="top"><td><b>ME617(A) (Spring 2020) </b></td><td>      <b>Advance theory of turbomachinery (Prof. Subrata Sarkar)</b>
+							    <br> <em>Rotating Stall and Surge in an Axial Compressor</em>
+							    <br> <a href="./Downloads/Term3Turbo.pdf" target="blank">Term paper 3 </a>
+								
+	  <tr valign="top"><td><b>AE602(A) (Spring 2020) </b></td><td>      <b>Heat Transfer for Aerospace Application (Prof. Rakesh Kumar)</b>
+							    <br> <em>A Study of Mixed Convection Heat Transfer in Different Structures</em>
+							    <br> <a href="./Downloads/A Study of Mixed Convection Heat Transfer in Different Structures.pdf" target="blank">Term Paper</a></td></
+								
+	  </table>	
+
+
+	 </table>	
+
+
+	 </table>
+	 
+
+
+	</div>
 
         <div id="tab3" class="tab_content">
-            <h2>Refereed Journal Publications</h2>
-            <table>
-                <tr valign="top">
-                    <td align="right" class="bibtexnumber">[<a name="PRF">6</a>]</td>
-                    <td class="bibtexitem">
-                        Arantza&nbsp;Jency, Aasheesh&nbsp;Bajpai and Rakesh&nbsp;Kumar 
-                        "Comparative Analysis of Flow Field and Thrust Behavior of Plug Nozzles in Continuum vs. Rarefied Conditions"
-                        Submitted (Journal of Spacecrafts and Rockets, AIAA, 2024)&nbsp;
-                    </td>
-                </tr>
-                <tr valign="top">
-                    <td align="right" class="bibtexnumber">[<a name="PRF">5</a>]</td>
-                    <td class="bibtexitem">
-                        Aasheesh&nbsp;Bajpai, Ashish&nbsp;Bhateja and Rakesh&nbsp;Kumar 
-                        "Plume-surface interaction during lunar landing using a two-way coupled DSMC-DEM approach"
-                        23 February 2024 (Physical Review Fluids) "<b>Editor's suggestion</b>", DOI:10.1103/PhysRevFluids.9.024306&nbsp;
-                        <a href = "https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.9.024306" target="_blank">Link</a>
-                    </td>
-                </tr>
-                <tr valign="top">
-                    <td align="right" class="bibtexnumber">[<a name="PoF">4</a>]</td>
-                    <td class="bibtexitem">
-                        Ahilan Appar, Aasheesh Bajpai, Rakesh Kumar; Numerical Study of Gas Surface Interface Effects
-                        due to Transpiration in Hypersonic Flow over a Blunt Body". Physics of Fluids 18 January 2024; 36 (1). 
-                        <a href = "https://doi.org/10.1063/5.0179920" target="_blank">Link</a> 
-                    </td>
-                </tr>
-                <tr valign="top">
-                    <td align="right" class="bibtexnumber">[<a name="IJoC">1</a>]</td>
-                    <td class="bibtexitem">
-                        Aasheesh&nbsp;Bajpai, Rohan&nbsp;Dutta and Parthasarathi&nbsp;Ghosh.
-                        "Parameter Estimation of Equipment for Development of an Experimental Setup of a Reverse Brayton Cryocooler for Cooling High Temperature Superconducting Cables"
-                        <em>Indian Journal of Cryogenics</em>, 2019&nbsp;
-                        <a href = "https://www.indianjournals.com/ijor.aspx?target=ijor:ijc&volume=44&issue=1&article=014" target="_blank">Link</a> 
-                    </td>
-                </tr>
-            </table>
+		<h2>Refereed Journal Publications</h2>
 
-            <h2>Conference Presentations</h2>
-            <table>
-                <tr valign="top">
-                    <td align="right" class="bibtexnumber">[<a name="IUTAM">1</a>]</td>
-                    <td class="bibtexitem">
-                        Aasheesh&nbsp;Bajpai, Ashish&nbsp;Bhateja and Rakesh&nbsp;Kumar.
-                        "Plume surface interaction during lunar landing"
-                        <em>IUTAM symposium on Rapid granular flows and turbulent particle suspensions, IIT Bombay, Powai, Mumbai, India, Jan 21-25, 2024</em>
-                    </td>
-                </tr>
-            </table>
+<table>
+
+
+
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="PRF">6</a>]
+</td>
+<td class="bibtexitem">
+Arantza&nbsp;Jency, Aasheesh&nbsp;Bajpai and Rakesh&nbsp;Kumar 
+"Comparative Analysis of Flow Field and Thrust Behavior of Plug Nozzles in Continuum vs. Rarefied Conditions"
+ Submitted (Journal of Spacecrafts and Rockets, AIAA, 2024) &nbsp;
+<a href = "" target="_blank"></font></a>
+
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="PRF">5</a>]
+</td>
+<td class="bibtexitem">
+ Aasheesh&nbsp;Bajpai, Ashish&nbsp;Bhateja and Rakesh&nbsp;Kumar 
+"Plume-surface interaction during lunar landing using a two-way coupled DSMC-DEM approach"
+ 23 February 2024 (Physical Review Fluids) "<b>Editor's suggestion</b>", DOI:10.1103/PhysRevFluids.9.024306&nbsp;
+<a href = "https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.9.024306" target="_blank">Link</font></a>
+
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="PoF">4</a>]
+</td>
+<td class="bibtexitem">
+Ahilan Appar, Aasheesh Bajpai, Rakesh Kumar; Numerical Study of Gas Surface Interface Effects
+due to Transpiration in Hypersonic Flow over a Blunt Body". Physics of Fluids 18 January 2024; 36 (1). 
+<a href = "https://doi.org/10.1063/5.0179920" target="_blank">Link</font></a> 
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="PoF">3</a>]
+</td>
+<td class="bibtexitem">
+Aaditya Wangikar, Aasheesh Bajpai, Rakesh Kumar; Supersonic dusty gas flow past a cylinder in Eulerian-Lagrangian framework. Physics of Fluids 1 December 2023; 35 (12): 123323. https://doi.org/10[...]
+<a href = "https://pubs.aip.org/aip/pof/article/35/12/123323/2928918/Supersonic-dusty-gas-flow-past-a-cylinder-in" target="_blank">Link</font></a> 
+</td>
+</tr>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="PoF">2</a>]
+</td>
+<td class="bibtexitem">
+Ahilan Appar, Aasheesh Bajpai, Udhaya K. Sivakumar, Srujan K. Naspoori, Rakesh Kumar; Rarefied gas effects on hypersonic flow over a transpiration-cooled flat plate. Physics of Fluids 1 January 2[...]
+<a href = "https://pubs.aip.org/aip/pof/article/35/1/016109/2868487" target="_blank">Link</font></a> 
+</td>
+</tr>
+
+
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="IJoC">1</a>]
+</td>
+<td class="bibtexitem">
+Aasheesh&nbsp;Bajpai, Rohan&nbsp;Dutta  and Parthasarathi&nbsp;Ghosh.
+"Parameter Estimation of Equipment for Development of an Experimental Setup of a Reverse Brayton Cryocooler for
+Cooling High Temperature Superconducting Cables"
+ <em>Indian Journal of Cryogenics</em>,
+  2019&nbsp;
+<a href = "https://www.indianjournals.com/ijor.aspx?target=ijor:ijc&volume=44&issue=1&article=014" target="_blank">Link</font></a> 
+</td>
+</tr>
+</table>
+
+ <h2>Refereed Conference Publications</h2>
+ <table>
+ 
+  <tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="IIR">5</a>]
+</td>
+<td class="bibtexitem">
+Aasheesh&nbsp;Bajpai, Aaditya&nbsp;Wangikar and Rakesh&nbsp;Kumar.
+"Numerical simulation of supersonic dusty gas flow over a cylinder in the Eulerian-Lagrangian framework"
+ <em>ISSW34 conference proceedings, Springer 2023,PAPER ID: E-T09-0186
+DOI: &nbsp;
+ <a href = "" target="_blank">PDF</font></a> 
+
+</td>
+</tr>
+ 
+ 
+ <tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="IIR">4</a>]
+</td>
+<td class="bibtexitem">
+Aasheesh&nbsp;Bajpai, Sidyant&nbsp;Kumar,  Aaditya&nbsp;Wangikar, Sanjay&nbsp;Kumar and Rakesh&nbsp;Kumar.
+"Moving shock interaction with the granular particle curtain"
+ <em>FMFP2023 conference proceedings, Springer 2023 (Manuscript accepted),PAPER ID: FMFP2023-MIS-465
+DOI: &nbsp;
+ <a href = "" target="_blank">PDF</font></a> 
+
+</td>
+</tr>
+
+
+ <tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="IIR">3</a>]
+</td>
+<td class="bibtexitem">
+Ahilan&nbsp;Appar, Aasheesh&nbsp;Bajpai and Rakesh&nbsp;Kumar.
+"Numerical Study of Gas Surface Interface Effects due to Transpiration in a Hypersonic Flow over a Blunt Body"
+ <em>FMFP2023 conference proceedings, Springer 2023 (Manuscript accepted),PAPER ID: FMFP2023-MIS-462
+DOI: &nbsp;
+ <a href = "" target="_blank">PDF</font></a> 
+
+</td>
+</tr>
+ 
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="IIR">2</a>]
+</td>
+<td class="bibtexitem">
+Aasheesh&nbsp;Bajpai, Aman&nbsp;Dhillon, Rohan&nbsp;Dutta  and Parthasarathi&nbsp;Ghosh.
+"Root cause analysis of early performance deterioration of an existing helium liquefier using process simulation"
+ <em>15th Cryogenics, IIR international conference proceedings, 2019,PAPER ID: 0047
+DOI: 10.18462/iir.cryo.2019.0047&nbsp;
+ <a href = "https://drive.google.com/drive/folders/1BI3NIRRwgWcrYnYa6zbelYRPWEjy5ybf?usp=sharing" target="_blank">PDF</font></a> 
+
+</td>
+</tr>
+ 
+ <tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Dhillon">1</a>]
+</td>
+<td class="bibtexitem">
+
+Aman&nbsp;Dhillon, Aasheesh&nbsp;Bajpai and Parthasarathi&nbsp;Ghosh.
+"The effect of HTS heat rejection conditions on performance of reverse Brayton cryocooler" 
+ <em>15th Cryogenics, IIR international conference proceedings, 2019. PAPER ID: 0042
+DOI: 10.18462/iir.cryo.2019.0042</em>,
+  2019&nbsp;
+  <a href = "https://drive.google.com/drive/folders/1BI3NIRRwgWcrYnYa6zbelYRPWEjy5ybf?usp=sharing" target="_blank">PDF</font></a> 
+	
+</td>
+</tr>
+
+
+ <table>
+
+
+
+
+<h2> Conference Presentations </h2>
+ <table>
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="IUTAM">14</a>]
+</td>
+<td class="bibtexitem">
+Aasheesh&nbsp;Bajpai, Ashish&nbsp;Bhateja and Rakesh&nbsp;Kumar.
+"Plume surface interaction during lunar landing"
+ <em>IUTAM symposium on Rapid granular flows and turbulent particle suspensions, IIT Bombay, Powai, Mumbai, India, Jan 21-25, 2024</em>
+  &nbsp;
+</td>
+</tr>
+
         </div>
 
-        <div id="tab4" class="tab_content">
-            <h2>Courses taught at HBTU Kanpur as PMRF</h2>
-            <ol>
-                <li>ME6150, Laws of Thermodynamics: July - Dec 2021</li>
-            </ol>
-            
-            <h2>National Programme on Technology Enhanced Learning (NPTEL) as a PMRF Tutor</h2>
-            <ol>
-                <li>Introduction To Programming In C: February - April 2022</li>
-                <li>Computational Fluid Dynamics and Heat Transfer: July - October 2022</li>
-                <li>Computational Fluid Dynamics and Heat Transfer: July - October 2023</li>
-            </ol>
-            
-            <h2>Internship Students</h2>
-            <ol>
-                <li>Kriti Mawani (Rajasthan Technical University, India) (Summer 2021)</li>
-                <li>Kuhu Mishra (SRM university, Chennai) (Winter 2019)</li>
-                <li>Niga Das (SRM university, Chennai) (Winter 2019)</li>
-            </ol>
+	<div id="tab4" class="tab_content">
+
+	    <h2>Courses taught at HBTU Kanpur as PMRF</h2>
+	    
+	  <ol>
+	    
+	    <li> ME6150, Laws of Thermodynamics: July - Dec 2021 
+	    </li>
+
+
+	  </ol>
+	  
+	  <h2>National Programme on Technology Enhanced Learning (NPTEL) as a PMRF Tutor  </h2>
+	  
+	  <ol>
+	  
+  	    <li>Introduction To Programming In C	 
+  	    <a> : February - April 2022 	</a>
+          <!a href="https://onlinecourses.nptel.ac.in/noc21_me112/preview" target="blank" July - October 2021 <!/a>
+	</li>   
+	  
+  	    <li>Computational Fluid Dynamics and Heat Transfer    
+  	    <a> : July - October 2022 	</a>
+          <!a href="https://nptel.ac.in/courses/112104302" target="blank" July - October 2022 <!/a>
+	</li>  
+	
+	<li>Computational Fluid Dynamics and Heat Transfer    
+  	    <a> : July - October 2023 	</a>
+          <!a href="https://nptel.ac.in/courses/112104302" target="blank" July - October 2023 <!/a>
+	</li>   
+	
+	 </ol>
+	
+	  <h2>Internship Students </h2>
+
+	  <ol>
+	    
+	    <li>Kriti Mawani (Rajasthan Technical University, India) (Summer 2021) </li>
+		<li>Kuhu Mishra (SRM university, Chennai) (Winter 2019) </li>
+		<li>Niga Das (SRM university, Chennai) (Winter 2019) </li>
+	 </ol>
+
+
+
+	 
         </div>
 
-        <div id="tab5" class="tab_content">
-            <h1 style="background-color:#e8f4f8;">
-                <b><i>"Dust is the number one concern in returning to the moon" - Apollo Astronaut John Young</i></b>
-            </h1>
-            
-            <figure>
-                <img src="./Downloads/LunarLanding_PlumeParticles.jpg" alt="Lunar Landing Plume Particles" style="width:100%">
-            </figure>
-            
-            <p align="justify">
-                <b>Physics of Plume Surface Interaction (PSI):</b> PSI involves high-speed chemically reacting plumes interacting with a planetary surface. 
-                Near plume region behaves as a continuum. Under rarefied conditions, the continuum assumption is not valid farther away from plume; therefore, kinetic-based equations of motion are more applicable.
-                For this work we are using only particle based methods in the whole domain.
-                We are using DSMC for the plume flow and DEM for the granular particle flows and particle-particle interactions.
-            </p>
+	<div id="tab5" class="tab_content">
+	
+	<body>
 
-            <p align="justify">
-                <b>Problems reported during Apollo landing:</b> Obstruction to the pilot's vision, degradation of thermal control surfaces, dust penetration into the vehicle,
-                damage to solar cells and pressurized vessels, damaged astronaut's suit, surveyor's optical mirror (183 meters from Apollo) was damaged due to the dust particles cast out by Apollo during descent.
-            </p>
-            
-            <figure>
-                <img src="./Downloads/foot.PNG" alt="Apollo Footprint" style="width:100%">
-            </figure>
-            
-            <figure>
-                <img src="./Downloads/Marsian_landing.gif" alt="Martian Landing" style="width:100%">
-            </figure>
+<h1 style="background-color:powderblue;"><b><i>According to Apollo Astronaut John Young: "Dust is the number one concern in returning to the moon"</i></b></h1>
+<p style="background-color:tomato;"><b>Lunar landing diagram by Aasheesh Bajpai</b</p>
 
-            <figure>
-                <img src="./Downloads/lander.gif" alt="Martian Landing Animation" style="width:100%">
-                <figcaption>Martian Landing</figcaption>
-            </figure>
+</body>
+	
+	
+	
+	<figure>
+  <img src="./Downloads/LunarLanding_PlumeParticles.jpg" alt="Trulli" style="width:100%">
+</figure>
+	 
+	 Physics of plume surface interaction(PSI): PSI involves high-speed chemically reacting plumes interacting with a planetary surface. 
+	 Near plume region behaves as a continuum. Under rarefied conditions, the continuum assumption is not valid farther away from plume; therefore, kinetic-based equations of motion are more applica[...]
+	 For this work we are using only particle based methods in the whole domain.
+	 We are using DSMC for the plume flow and DEM for the granular particle flows and particle-particle interactions.
+
+
+      <br>Problems reported during Apollo landing: Obstruction to the pilot's vision, degradation of thermal control surfaces, dust penetration into the vehicle,
+	 damage to solar cells and pressurized vessels, damaged astronaut's suit, surveyor's optical mirror(183 meteres from Apollo) was damaged due to the dust particles
+	 cast out by Apollo during descent.<br>
+	
+
+	<figure>
+	<img src="./Downloads/foot.PNG" alt="Trulli" style="width:100%">
+	</figure>
+	
+
+
+	<figure>
+	<img src="./Downloads/Marsian_landing.gif" alt="Trulli" style="width:100%">
+	</figure>
+
+
+
+
+	<figure>
+  <img src="./Downloads/lander.gif" alt="Trulli" style="width:100%">
+  <figcaption>Fig. - Martian landing</figcaption>
+  </figure>
+
+	<figure>
+	<img src="./Downloads/IUTAM_LLanding_Poster.png" alt="Trulli" style="width:50%">
+	<figcaption></figcaption>
+	</figure>
+	
+	<head>
+    <title>
+        HTML hr color Attribute
+    </title>
+</head>
+ 
+
+  
+	
+	
+	 
         </div>
+	   
 
         <div id="tab6" class="tab_content">
-            <h2>Linux/Programming Documents</h2>
-            <ul>
-                <li><a href = "https://www.cac.cornell.edu/VW/topics.aspx" target="blank">High Performance Computing at Cornell Virtual Workshop</a></li>
-                <li><a href = "https://computing.llnl.gov/?set=training&page=index" target="blank">High Performance Computing training at Lawrence Livermore National Labs</a></li>
-            </ul>
-            
-            <h2>Computational Fluid Dynamics</h2>
-            <ul>
-                <li><a href = "https://drive.google.com/drive/u/0/folders/1RRCbFr3Epc44Cm0iYxv6LY3xV5hMyd4u" target="blank">CFD notes by Aasheesh Bajpai</a></li>
-                <li><a href = "https://youtube.com/playlist?list=PLb8lpbqUlB67hFMpFwqmL0Ru_iZ6i-pkN" target="blank">CFD live sessions by Aasheesh Bajpai (NPTEL)</a></li>
-            </ul>
-            
-            <h2>Introduction to Programming with C</h2>
-            <ul>
-                <li><a href = "https://youtube.com/playlist?list=PLb8lpbqUlB65MsZC-zRsXKOMV1OZlHXP4" target="blank">Introduction to programming with C live sessions by Aasheesh Bajpai (NPTEL)</a></li>
-            </ul>
-            
-            <h2>Engineering Talks</h2>
-            <ul>
-                <li><a href="https://youtu.be/3zEAzdViZao" target="_blank">CFD Solvers, Coding & Multiphysics - Esteban Ferrer</a></li>
-                <li><a href="https://www.youtube.com/playlist?list=PLAnJSqOgT9cSiqQehdnjjdx7s42YZwKAv" target="_blank">Understanding Direct Simulation Monte Carlo method by Prof. Rakesh</a></li>
-                <li><a href="https://youtu.be/1_InUUX5-LE" target="_blank">Thermodynamics and Heat Transfer (Practical Understanding)</a></li>
-                <li><a href="https://youtu.be/uzQRqclridY" target="_blank">Eureka with Prof. Suman Chakraborty</a></li>
-            </ul>
-            
-            <h2>Links</h2>
-            <ul>
-                <li><a href="http://richardstjohn.com/videos/" target="_blank">Want to be successful? Listen to Richard St. John</a></li>
-                <li><a href="http://cgi.stanford.edu/~dept-ctl/tomprof/postings.php" target="_blank">Tomorrow's Professor Blog (Stanford University)</a></li>
-                <li><a href="http://www.ted.com/talks/steve_jobs_how_to_live_before_you_die" target="_blank">How to Live Before You Die - Steve Jobs</a></li>
-            </ul>
+
+	  <h2>Linux/Programming Documents</h2>
+
+	  <ul>
+
+	  <li>
+	  <p align="left"> High Performance Computing at  
+	  <a href = "https://www.cac.cornell.edu/VW/topics.aspx" target="blank">Cornell Virtual Workshop</a>	
+	  </li>
+
+	  <li>
+	  <p align="left"> High Performance Computing training at   
+	  <a href = "https://computing.llnl.gov/?set=training&page=index" target="blank">Lawrence Livermore National Labs</a>	
+	  </li>
+
+	  </ul>
+	  
+	  <h2>Computaional Fluid Dynamics</h2>
+
+	  <ul>
+
+	  <li>
+	  <p align="left"> CFD notes by Aasheesh Bajpai
+	  <a href = "https://drive.google.com/drive/u/0/folders/1RRCbFr3Epc44Cm0iYxv6LY3xV5hMyd4u" target="blank">Notes</a>	
+	  </li>
+
+	  
+	  <li>
+	  <p align="left"> CFD live sessions by Aasheesh Bajpai
+	  <a href = "https://youtube.com/playlist?list=PLb8lpbqUlB67hFMpFwqmL0Ru_iZ6i-pkN" target="blank">NPTEL live sessions</a>	
+	  </li>
+
+	  </ul>
+	  
+	    <h2>Introduction to programming with C</h2>
+
+	  <ul>
+
+	  
+	  <li>
+	  <p align="left"> Introduction to programming with C, live sessions by Aasheesh Bajpai
+	  <a href = "https://youtube.com/playlist?list=PLb8lpbqUlB65MsZC-zRsXKOMV1OZlHXP4" target="blank">NPTEL live sessions</a>	
+	  </li>
+
+	  </ul>
+	  
+	  <h2><font color="#000000">Engineering Talks</font></h2>
+	  
+	<ul>
+	
+		<li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="https://youtu.be/3zEAzdViZao" target="_blank">CFD Solvers, Coding & Multiphysics- Esteban Ferrer</a>	
+	    </font></p>
+	  </li>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="https://www.youtube.com/playlist?list=PLAnJSqOgT9cSiqQehdnjjdx7s42YZwKAv" target="_blank">Understanding Direct Simulation Monte Carlo method by Prof. Rakesh [...]
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="https://youtu.be/1_InUUX5-LE" target="_blank">Thermodynamics and Heat Transfer (Practical Understanding)</a>	
+	    </font></p>
+	  </li>
+	  
+	
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="https://youtu.be/uzQRqclridY" target="_blank">Eureka with Prof. Suman Chakraborty</a>	
+	    </font></p>
+	  </li>
+	  
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="https://www.youtube.com/playlist?list=PLS9gPJHxqak2gjuDRvOG6jJthu38XjSNO" target="_blank">How to be a professor at IIT's</a>	
+	    </font></p>
+	  </li>
+
+	</ul>
+	  
+	  
+	 
+	  
+	  
+	  
+	  
+	  
+
+	<h2><font color="#000000">Links</font></h2>
+	  
+	<ul>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://richardstjohn.com/videos/" target="_blank">Want to be successful? listen to Richard St. John</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://cgi.stanford.edu/~dept-ctl/tomprof/postings.php" target="_blank">Tomorrow's Professor Blog (source: Stanford University)</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.pitt.edu/~druzdzel/feynman.html" target="_blank">Richard Feynman on Teaching</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.cs.virginia.edu/~evans/talks/metatalk/" target="_blank">How to Give a Talk So Good There Will be Pizza Left For You - David Evans</a>	
+	    </font></p>
+	  </li>
+	  
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.cs.cmu.edu/~pausch/Randy/Randy/raibert.htm" target="_blank">Good Writing - Marc H. Raibert</a>	
+	    </font></p>
+	  </li>
+
+	</ul>
+
+	<h2><font color="#000000">TED Talks</font></h2>
+
+	<ul>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/apollo_robbins_the_art_of_misdirection" target="_blank">The art of misdirection - Apollo Robbins
+	    </a> </font></p>
+	  </li>
+
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/louie_schwartzberg_hidden_miracles_of_the_natural_world" target="_blank">Hidden miracles of the natural world - Louie Schwartzberg
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/richard_st_john_s_8_secrets_of_success" target="_blank">Secrets of success - Richard St. John
+	    </a> </font></p>
+	  </li>
+	  <li>
+	    
+	    <p align="left">
+	      <font color="#000000"><a href="http://www.ted.com/talks/steve_jobs_how_to_live_before_you_die" target="_blank">How to live before you die - Steve Jobs
+	    </a> </font></p>
+	  </li>
+
+	</ul>
+
         </div>
 
-        <div id="tab7" class="tab_content">
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> <a href="mailto:aasheesh@iitk.ac.in">aasheesh@iitk.ac.in</a></p>
-            <p><strong>Address:</strong> Department of Aerospace Engineering, Indian Institute of Technology Kanpur, Kanpur, UP 208016, India</p>
-            <p><strong>Office:</strong> Non-Equilibrium Flow Simulation Laboratory (NFSL)</p>
-        </div>
+	<div id="tab7" class="tab_content">
+		<h2>Contact Information</h2>
+		<p><strong>Email:</strong> <a href="mailto:aasheeshbajpai@gmail.com">aasheeshbajpai@gmail.com</a></p>
+		<p><strong>Address:</strong> Department of Aerospace Engineering, Indian Institute of Technology Kanpur, Kanpur, UP 208016, India</p>
+		<p><strong>Office:</strong> Non-Equilibrium Flow Simulation Laboratory (NFSL)</p>
+	</div>
     </div>
 </div>
 
