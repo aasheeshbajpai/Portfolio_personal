@@ -38,10 +38,10 @@
 	--text: #f4f4f2;
 	--text-dim: #b9b9b5;
 	--text-mute: #7c7c78;
-	--accent: #ff3d2e;
-	--accent-soft: rgba(255, 61, 46, 0.14);
+	--accent: #f5a623;
+	--accent-soft: rgba(245, 166, 35, 0.14);
 	--font-display: 'Space Grotesk', 'Inter', sans-serif;
-	--font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+	--font-body: 'Space Mono', 'JetBrains Mono', monospace;
 	--font-mono: 'Space Mono', 'JetBrains Mono', monospace;
 }
 
@@ -60,7 +60,7 @@ body {
 	color: var(--text-dim);
 	margin: 0;
 	padding: 0;
-	font: 15px/1.7 var(--font-body);
+	font: 13.5px/1.8 var(--font-body);
 }
 
 h1 {
@@ -269,7 +269,7 @@ a {
 }
 
 a:hover {
-	color: #ff8177;
+	color: #ffc766;
 	text-decoration: underline;
 	text-decoration-style: dotted;
 }
