@@ -1,4 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url('style/fonts/Inter-Variable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Grotesk';
+	font-style: normal;
+	font-weight: 500 700;
+	font-display: swap;
+	src: url('style/fonts/SpaceGrotesk-Variable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('style/fonts/SpaceMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('style/fonts/SpaceMono-Bold.woff2') format('woff2');
+}
 
 :root {
 	--bg: #0a0a0a;
