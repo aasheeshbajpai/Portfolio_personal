@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aasheeshbajpai.github.io/Portfolio_personal/sitemap.xml
