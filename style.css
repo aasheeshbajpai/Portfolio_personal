@@ -331,6 +331,22 @@ em {
 	font-style: italic;
 }
 
+.site-footer {
+	clear: both;
+	text-align: center;
+	padding: 18px 0 4px 0;
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 0.04em;
+	color: var(--text-mute);
+}
+
+.site-footer p {
+	margin: 0;
+	text-align: center;
+	color: var(--text-mute);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
 	.container {
