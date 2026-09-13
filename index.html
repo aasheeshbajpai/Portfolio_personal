@@ -22,29 +22,32 @@
     .hero .meta { max-width:720px; }
     .hero .meta p.lead { color:var(--text); font-size:1.05rem; margin:8px 0 16px; }
     .cta { display:flex; gap:12px; flex-wrap:wrap; }
-    .btn { background:var(--accent); color:#0b0b0b; padding:10px 14px; border-radius:6px; font-weight:700; text-decoration:none; }
+    .btn { background:var(--accent); color:#0b0b0b; padding:10px 14px; border-radius:6px; font-weight:700; text-decoration:none; transition: background-color 0.2s; }
+    .btn:hover { background:var(--accent-hover, #ffc107); }
     .muted { color:var(--text-mute); }
     nav.main-nav { margin:18px 0 6px; }
-    nav.main-nav a { margin-right:12px; color:var(--text-mute); font-weight:700; font-family:var(--font-mono); font-size:12px; }
+    nav.main-nav a { margin-right:12px; color:var(--text-mute); font-weight:700; font-family:var(--font-mono); font-size:12px; cursor:pointer; text-decoration:none; transition:color 0.2s; }
+    nav.main-nav a.active { color:var(--accent); }
+    nav.main-nav a:hover { color:var(--text); }
   </style>
 </head>
 <body>
   <div class="container" role="main">
     <header>
       <nav class="main-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
       <section class="hero">
-        <img src="style/personal_photo1.jpg" alt="Aasheesh Bajpai">
+        <img src="personal_photo1.jpg" alt="Aasheesh Bajpai">
         <div class="meta">
           <h1>Dr. Aasheesh Bajpai</h1>
           <div class="muted">Staff Engineer, R&amp;D Engineering — Synopsys</div>
-          <p class="lead">Ph.D. (Aerospace), IIT Kanpur. Research focused on dusty gas flows, DSMC-DEM coupling, CFD-DEM, and high-speed gas dynamics. I build high‑fidelity solvers and work on multidisciplinary simulation tools for space and engineering applications.</p>
+          <p class="lead">Ph.D. (Aerospace), IIT Kanpur. Research focused on dusty gas flows, DSMC-DEM coupling, CFD-DEM, and high-speed gas dynamics. I build high‑fidelity solvers and work on multiphase flow physics.</p>
           <div class="cta">
             <a class="btn" href="./Downloads/Aasheesh_Bajpai_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
             <a class="btn" href="mailto:aasheeshbajpai@gmail.com">Email</a>
@@ -58,7 +61,8 @@
     <main>
       <section id="about" class="tab_content" style="display:block; padding-top:6px;">
         <h2>About</h2>
-        <p>I'm currently a Staff Engineer in R&amp;D at Synopsys. My doctoral work at IIT Kanpur (PMRF) developed coupled DSMC–DEM and CFD–DEM solvers to study plume–surface interactions and dusty gas dynamics, with applications to lunar landing and particle-laden flows. I have experience in Fortran, C++, Python, OpenFOAM, SPARTA, LIGGGHTS, LAMMPS, and HPC.</p>
+        <p>I'm currently a Staff Engineer in R&amp;D at Synopsys. My doctoral work at IIT Kanpur (PMRF) developed coupled DSMC–DEM and CFD–DEM solvers to study plume–surface interactions and lunar landing physics.</p>
+        <p>My research interests span dusty gas flows, particle-fluid coupling, high-performance computing, and rarefied gas dynamics. I have published in Physical Review Fluids and Physics of Fluids, and presented at international conferences including RGD, TGF, and APS meetings.</p>
       </section>
 
       <section id="research" class="tab_content">
@@ -67,7 +71,7 @@
           <li>Dusty gas / gas–granular flows</li>
           <li>Plume–surface interaction and lunar landing physics</li>
           <li>CFD–DEM and DSMC–DEM solver development</li>
-          <li>High‑performance computing & parallel solvers</li>
+          <li>High‑performance computing &amp; parallel solvers</li>
           <li>Shock–particle interactions, rarefied gas dynamics</li>
         </ul>
       </section>
@@ -75,21 +79,30 @@
       <section id="publications" class="tab_content">
         <h2>Selected Publications</h2>
         <ul>
-          <li>Plume‑surface interaction during lunar landing using a two‑way coupled DSMC‑DEM approach — Phys. Rev. Fluids (2024) — <a href="https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.9.024306" target="_blank" rel="noopener">Link</a></li>
-          <li>Supersonic dusty gas flow past a cylinder in Eulerian–Lagrangian framework — Physics of Fluids (2023) — <a href="https://pubs.aip.org/aip/pof/article/35/12/123323/2928918/Supersonic-dusty-gas-flow-past-a-cylinder-in" target="_blank" rel="noopener">Link</a></li>
-          <li>Other peer‑reviewed articles and conference papers — see full list on this site.</li>
+          <li><strong>Plume‑surface interaction during lunar landing using a two‑way coupled DSMC‑DEM approach</strong> — Phys. Rev. Fluids (2024)</li>
+          <li><strong>Supersonic dusty gas flow past a cylinder in Eulerian–Lagrangian framework</strong> — Physics of Fluids (2023)</li>
+          <li><strong>Parameter Estimation of Equipment for Development of an Experimental Setup of a Reverse Brayton Cryocooler</strong> — Indian Journal of Cryogenics (2019)</li>
+          <li>Multiple peer‑reviewed conference papers and presentations at RGD, TGF, and APS meetings</li>
         </ul>
       </section>
 
       <section id="teaching" class="tab_content">
-        <h2>Teaching & Mentoring</h2>
-        <p>I have taught and tutored courses in thermodynamics, computational fluid dynamics, and programming (NPTEL), and supervised internship students on simulation projects.</p>
+        <h2>Teaching &amp; Mentoring</h2>
+        <p>I have taught and tutored courses in thermodynamics, computational fluid dynamics, and programming. As a PMRF fellow, I served as:</p>
+        <ul>
+          <li>Live tutor for NPTEL: Introduction to Programming in C (2022)</li>
+          <li>Live tutor for NPTEL: Computational Fluid Dynamics and Heat Transfer (2022)</li>
+          <li>Teaching Assistant for multiple undergraduate and graduate courses at IIT Kanpur</li>
+        </ul>
+        <p>I have also supervised internship students on simulation projects and delivered seminars on advanced topics in thermodynamics and CFD.</p>
       </section>
 
       <section id="contact" class="tab_content">
         <h2>Contact</h2>
         <p><strong>Email:</strong> <a href="mailto:aasheeshbajpai@gmail.com">aasheeshbajpai@gmail.com</a></p>
-        <p><strong>Affiliation:</strong> Department of Aerospace Engineering, IIT Kanpur (former); Synopsys (current)</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/aasheeshbajpai" target="_blank">github.com/aasheeshbajpai</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aasheeshbajpai" target="_blank">linkedin.com/in/aasheeshbajpai</a></p>
+        <p><strong>Affiliation:</strong> Synopsys (current); Department of Aerospace Engineering, IIT Kanpur (former)</p>
       </section>
     </main>
 
@@ -99,15 +112,42 @@
   </div>
 
   <script>
-    // Smooth scrolling for in-page links
-    document.querySelectorAll('nav.main-nav a').forEach(a => {
-      a.addEventListener('click', (e) => {
+    // Navigation and tab switching
+    const navLinks = document.querySelectorAll('nav.main-nav a.nav-link');
+    const sections = document.querySelectorAll('main section.tab_content');
+
+    // Handle smooth scrolling and tab switching
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
         e.preventDefault();
-        const id = a.getAttribute('href');
-        const el = document.querySelector(id);
-        if (el) el.scrollIntoView({behavior: 'smooth', block: 'start'});
+        
+        // Get the target section
+        const targetId = link.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+          // Hide all sections
+          sections.forEach(section => {
+            section.style.display = 'none';
+          });
+          
+          // Show target section
+          targetSection.style.display = 'block';
+          
+          // Update active link
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+          
+          // Smooth scroll to top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
       });
     });
+
+    // Set first tab as active on load
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add('active');
+    }
   </script>
 </body>
 </html>
