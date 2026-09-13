@@ -195,6 +195,70 @@ html ul.tabs li.active a, html ul.tabs li.active a:hover {
 	background: var(--panel-alt);
 }
 
+.tab_content figure img {
+	float: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	display: block;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.hero-photo {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid var(--accent);
+	float: none;
+	margin: 0;
+	padding: 0;
+	background: var(--panel-alt);
+}
+
+.hero-meta {
+	flex: 1;
+	min-width: 240px;
+}
+
+.hero-role {
+	font-family: var(--font-display);
+	font-weight: 600;
+	color: var(--text);
+	margin: 4px 0;
+}
+
+.hero-sub {
+	color: var(--text-dim);
+	margin: 4px 0 16px;
+}
+
+.btn {
+	display: inline-block;
+	background: var(--accent);
+	color: #0b0b0b;
+	padding: 10px 16px;
+	border-radius: 6px;
+	font-family: var(--font-display);
+	font-weight: 700;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+	background: #ffc766;
+	color: #0b0b0b;
+	text-decoration: none;
+}
+
 .tab_content li {
 	margin: 0.5em 0;
 	color: var(--text-dim);
@@ -379,5 +443,14 @@ em {
 		float: none;
 		display: block;
 		margin: 0 0 16px 0;
+	}
+
+	.hero {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hero-sub, .hero-role {
+		text-align: center;
 	}
 }
